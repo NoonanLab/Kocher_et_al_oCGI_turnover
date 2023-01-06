@@ -1,5 +1,5 @@
-# 1/6/22
-# This directory contains scripts for calling oCGIs in each genome
+# This directory contains scripts for calling CGIs in each genome
+# And for generating feature annotations in each genome, which will be used to filter CGIs to oCGIs
 # Genome versions compatible with data from Roller & Stamper et al 2021: rheMac10, calJac4, mm39, rn7, susScr11, canFam6, felCat9, equCab3
 # Genome versions comparible with data from Reilly, Yin et al 2015 and Cotney, Leng et al 2013: hg19, rheMac2, mm9
 
