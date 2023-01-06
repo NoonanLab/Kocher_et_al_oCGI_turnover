@@ -8,6 +8,6 @@ Call CGIs in each genome:
 
 Generate bed files for feature annotations in each species (based on RefSeq, FANTOM TSSs, and ENCODE blacklist regions):
 220724_annotateFeatures.sh
-^Uses python file makeCategoryBedFiles_plusIntrons_chrSize.py to generate bed files with RefSeq annotated features
+^Calls the script python_scripts/makeCategoryBedFiles_plusIntrons_chrSize.py - to generate bed files with RefSeq annotated features
 
 220725_rmsk_blacklist.sh
