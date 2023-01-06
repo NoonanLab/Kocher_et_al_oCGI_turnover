@@ -217,7 +217,7 @@ do
     done
 done
 
-#### Quality control on replicates
+#### Generate intersection of all replicates, doing a quality control step to remove outliers
 # 9/13/22
 # Remove a replicate if:
 # it has >=50% MORE peaks than average of other two replicates
@@ -225,6 +225,7 @@ done
 # if it has >= 20% FEWER peaks than average of other two replicates
 
 # also rename col 4 with the peak name: species_tissue_mark_line#
+# script outputs repsToUseRoller.txt (simply keeps track of which reps are good, for use downstream) and intersectCommands.txt (for batch submission)
 
 python makeIntersectCommands.py peakSummary.txt repsToUseRoller.txt > intersectCommands.txt
 dsq --job-file intersectCommands.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END
