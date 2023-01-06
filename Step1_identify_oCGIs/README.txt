@@ -20,11 +20,12 @@ FANTOM
 220616_FANTOM_data.sh
 
 ENCODE blacklist
-220725_rmsk_blacklist.sh
+220725_blacklist.sh
 
 #########
-Download phastCons data for use downstream
-
+Download phastCons data and age segmentation data (from Emera, Yin et al 2016) for use downstream
+220729_phastCons_ageSegmentation.sh
 
 #########
 Download RepeatMasker data for use downstream
+220725_rmsk.sh
