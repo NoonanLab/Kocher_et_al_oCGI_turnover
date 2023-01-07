@@ -8,6 +8,8 @@ Pipeline for analysis of oCGIs and histone modification peaks between species pa
 prepFiles_speciesPairs_CGIcentric_Roller.py
 prepFiles_speciesPairs_CGIcentric_LiverTF.py # ****need to find where I made repsToUseLiverTF.txt****
 prepFiles_speciesPairs_CGIcentric_Noonan.py
+# All of these job files create intermediate files, then call a python script that integrates them into a final table:
+countFinalOverlaps_speciesPairs_CGIcentric.py
 
 *** find script for making trackhub***
 
