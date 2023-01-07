@@ -1,5 +1,5 @@
 # 7/30/22
-# Purpose: make consensus CGIs between all species pairs
+# Purpose: identify orthologous CGIs between all species pairs (called "consensusCGIs" in this pipeline)
 # This means the 8 Roller species (lifting via human, hg38): rheMac10 calJac4 mm39 rn7 susScr11 canFam6 felCat9 equCab3
 # And the 3 species for Noonan data (lifting via human, hg19): hg19 rheMac2 mm9
 
