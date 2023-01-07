@@ -1,2 +1,2 @@
-# Identification of orthologous oCGIs between species pairs and annotation with phastCons and age segmentation data
+# Identification of orthologous oCGIs between all species pairs in the analysis
 220730_orthologousCGIs.sh
