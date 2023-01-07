@@ -18,12 +18,12 @@ Process data from Reilly, Yin et al 2015 (developing brain, H3K27ac and H3K4me2)
 
 ###############
 Process TF binding data
-CTCF ChIP-seq from Schmidt et al 2012 Cell
+CTCF ChIP-seq from Schmidt et al 2012 Cell, focus on rhesus/mouse/rat/dog
 220615_CTCF_dataProcessing.sh
 Calls:
 prepFiles_processCTCF.py
 
-Ballester et al 2014 
+CEBPA, HNF4a, ONECUT1, and FOXA1 from Ballester et al 2014 eLife, focus on rhesus/mouse/rat/dog
 220720_liverTF_dataProcessing.sh
 Calls:
 prepFiles_processLiverTF.py
