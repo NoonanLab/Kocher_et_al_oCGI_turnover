@@ -9,6 +9,8 @@ prepFiles_speciesPairs_CGIcentric_Roller.py
 prepFiles_speciesPairs_CGIcentric_LiverTF.py # ****need to find where I made repsToUseLiverTF.txt****
 prepFiles_speciesPairs_CGIcentric_Noonan.py
 
+*** find script for making trackhub***
+
 221017_runPermutationOnHPC.sh
 # Run permutation test to assess enrichment in each box in the grid using R on the cluster
 
