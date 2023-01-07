@@ -15,3 +15,15 @@ makeIntersectCommands.py # make bed files with the intersection of all replicate
 ###############
 Process data from Reilly, Yin et al 2015 (developing brain, H3K27ac and H3K4me2) and Cotney, Leng et al 2013 (developing limb, H3K27ac)
 220628_processNoonan.sh
+
+###############
+Process TF binding data
+CTCF ChIP-seq from Schmidt et al 2012 Cell
+220615_CTCF_dataProcessing.sh
+Calls:
+prepFiles_processCTCF.py
+
+Ballester et al 2014 
+220720_liverTF_dataProcessing.sh
+Calls:
+prepFiles_processLiverTF.py
