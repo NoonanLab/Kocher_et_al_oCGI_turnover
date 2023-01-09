@@ -11,6 +11,10 @@ prepFiles_speciesPairs_CGIcentric_Noonan.py
 # All of these job files create intermediate files, then call a python script that integrates them into a final table:
 countFinalOverlaps_speciesPairs_CGIcentric.py
 
+# Make files for trackHub with all ChIP-seq data, plus all CGIs and orthologous oCGIs
+makeTrackDb.py
+makeTrackDb_Noonan.py
+
 221017_runPermutationOnHPC.sh
 # Run permutation test to assess enrichment in each box in the grid using R on the cluster
 
