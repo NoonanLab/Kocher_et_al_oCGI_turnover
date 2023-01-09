@@ -18,6 +18,9 @@ makeTrackDb_Noonan.py
 221017_runPermutationOnHPC.sh
 # Run permutation test to assess enrichment in each box in the grid using R on the cluster
 
+qValues_CGIcentric.R
+# Analyze permutation results in R - convert p values to q values with correction for multiple testing, and report Fold Differences (FD)
+
 #### PEAK-CENTRIC ANALYSIS ####
 
 221130_speciesPairs_peakCentric.sh
