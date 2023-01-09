@@ -6,12 +6,10 @@ Pipeline for analysis of oCGIs and histone modification peaks between species pa
 # Generate a table for each species pair x tissue x mark x time point for analysis downstream in R
 # Uses several python scripts to make slurm job files:
 prepFiles_speciesPairs_CGIcentric_Roller.py
-prepFiles_speciesPairs_CGIcentric_LiverTF.py # ****need to find where I made repsToUseLiverTF.txt****
+prepFiles_speciesPairs_CGIcentric_LiverTF.py
 prepFiles_speciesPairs_CGIcentric_Noonan.py
 # All of these job files create intermediate files, then call a python script that integrates them into a final table:
 countFinalOverlaps_speciesPairs_CGIcentric.py
-
-*** find script for making trackhub***
 
 221017_runPermutationOnHPC.sh
 # Run permutation test to assess enrichment in each box in the grid using R on the cluster
