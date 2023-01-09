@@ -1,6 +1,6 @@
 Pipeline for analysis of oCGIs and histone modification peaks between species pairs
 
-#### oCGI-CENTRIC ANALYSIS ####
+#### oCGI-CENTRIC ANALYSIS in sub-directory CGI_centric/ ####
 
 220726_speciesPairs.sh
 # Generate a table for each species pair x tissue x mark x time point for analysis downstream in R
@@ -21,7 +21,7 @@ makeTrackDb_Noonan.py
 qValues_CGIcentric.R
 # Analyze permutation results in R - convert p values to q values with correction for multiple testing, and report Fold Differences (FD)
 
-#### PEAK-CENTRIC ANALYSIS ####
+#### PEAK-CENTRIC ANALYSIS in sub-directory Peak_centric/ ####
 
 221130_speciesPairs_peakCentric.sh
 # Generate a table for each species pair x tissue x mark x time point for analysis downstream in R
@@ -32,4 +32,6 @@ prepFiles_speciesPairs_peakCentric_Noonan.py
 
 230109_runPermutationOnHPC_peakCentric.sh
 # Run permutation test to assess enrichment in each box in the grid using R on the cluster
-# For the PEAK-CENTRIC pipeline
+
+qValues_peakCentric.R
+# Analyze permutation results in R - convert p values to q values with correction for multiple testing, and report Fold Differences (FD)
