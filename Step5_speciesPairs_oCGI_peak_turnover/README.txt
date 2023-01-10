@@ -21,6 +21,10 @@ makeTrackDb_Noonan.py
 qValues_CGIcentric.R
 # Analyze permutation results in R - convert p values to q values with correction for multiple testing, and report Fold Differences (FD)
 
+# CGI-centric analysis but without step that removes oCGIs overlapping promoter peaks - for use in Fig 2
+prepFiles_speciesPairs_CGIcentric_Roller_noPromFilter.py
+prepFiles_speciesPairs_CGIcentric_Noonan_noPromFilter.py
+
 #### PEAK-CENTRIC ANALYSIS in sub-directory Peak_centric/ ####
 
 221130_speciesPairs_peakCentric.sh
