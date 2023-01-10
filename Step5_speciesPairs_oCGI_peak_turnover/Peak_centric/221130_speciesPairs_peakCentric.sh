@@ -74,4 +74,4 @@ sbatch dsq-221202_speciesPairs_peakCentric_Noonan_jobFile-2022-12-02.sh # 188809
 # RUN PERMUTATION TEST WITH R ON RUDDLE
 # see 221017_runPermutationOnHPC_peakCentric.sh
 # which calls speciesPairs_permutation_HPC_peakCentric.R
-# then use qValues_peakCentric.R
+# then use qValues_peakCentric.R to make permutation_peakCentric_qAndFD_3x3.txt and permutation_peakCentric_qAndFD_4x3.txt for use in R for plots
