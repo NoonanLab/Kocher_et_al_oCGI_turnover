@@ -12,7 +12,10 @@ sortRegionNames.py
 # Making a GTF file from a BED file, taking the "exon" name from column 4 of the bed file - often is a bed file of ChIP peaks, not exons
 makeGTF_nameFromCol4.py
 
-# 
+# For outputting average RPM across replicates from the output of featureCounts, only for reconciledPeaks with names containing a_#### or b_#### (for use in speciesPairs pipeline)
+countRPM.py
+
+# For outputting average RPM across replicates from the output of featureCounts, this time for all peaks in the file (for use in singleSpecies pipeline)
 countRPM_general.py
 
 # 
