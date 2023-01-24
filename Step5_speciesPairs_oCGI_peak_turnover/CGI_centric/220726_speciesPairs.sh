@@ -57,8 +57,8 @@ cd /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric
 # 1) Roller histone data
 rm Roller_summaryFiles/*
 python prepFiles_speciesPairs_CGIcentric_Roller.py /gpfs/gibbs/pi/noonan/ak2267/Roller/peaks/repsToUseRoller.txt repeatFilter > 230107_speciesPairs_CGIcentric_Roller_jobFile.txt
-dsq --job-file 230107_speciesPairs_CGIcentric_Roller_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END --max-jobs 30
-sbatch dsq-230107_speciesPairs_CGIcentric_Roller_jobFile-2023-01-24.sh # 20240113
+dsq --job-file 230107_speciesPairs_CGIcentric_Roller_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END --max-jobs 100
+sbatch dsq-230107_speciesPairs_CGIcentric_Roller_jobFile-2023-01-24.sh # 20240604
 
 cd /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric
 tar -zcvf Roller_summaryFiles.gz Roller_summaryFiles/
@@ -82,7 +82,7 @@ scp ak2267@ruddle.hpc.yale.edu:/gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcent
 rm Noonan_summaryFiles/*
 python prepFiles_speciesPairs_CGIcentric_Noonan.py repeatFilter > 230107_speciesPairs_CGIcentric_Noonan_jobFile.txt
 dsq --job-file 230107_speciesPairs_CGIcentric_Noonan_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END --max-jobs 10
-sbatch dsq-230107_speciesPairs_CGIcentric_Noonan_jobFile-2023-01-24.sh # 20240194
+sbatch dsq-230107_speciesPairs_CGIcentric_Noonan_jobFile-2023-01-24.sh # 20240607
 
 cd /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric
 tar -zcvf Noonan_summaryFiles.gz Noonan_summaryFiles/
@@ -90,7 +90,7 @@ cd /Users/acadiak/Desktop/CGI/speciesPairs/CGIcentric
 scp ak2267@ruddle.hpc.yale.edu:/gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric/Noonan_summaryFiles.gz .
 
 
-######## FOR FIGURE 2
+######## FOR FIGURE 2 - DON'T RUN AT SAME TIME AS ABOVE BECAUSE IT OVERWRITES SOME FILES
 # Run all species pairs with H3K27ac, but remove step that filters oCGIs overlapping peaks associated with promoters and other features
 # Keep filters based on length and repeat content
 # The resulting tables will be used for Figure 2 to assess oCGI numbers across species (the bar plots in Fig 2B)
@@ -103,11 +103,11 @@ rm SummaryFiles_noPromFilter/*
 
 python prepFiles_speciesPairs_CGIcentric_Roller_noPromFilter.py /gpfs/gibbs/pi/noonan/ak2267/Roller/peaks/repsToUseRoller.txt repeatFilter > 230110_speciesPairs_CGIcentric_Roller_noPromFilter_jobFile.txt
 dsq --job-file 230110_speciesPairs_CGIcentric_Roller_noPromFilter_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END --max-jobs 10
-sbatch dsq-230110_speciesPairs_CGIcentric_Roller_noPromFilter_jobFile-2023-01-24.sh # 20240243
+sbatch dsq-230110_speciesPairs_CGIcentric_Roller_noPromFilter_jobFile-2023-01-24.sh # 20242341
 
 python prepFiles_speciesPairs_CGIcentric_Noonan_noPromFilter.py repeatFilter > 230110_speciesPairs_CGIcentric_Noonan_noPromFilter_jobFile.txt
 dsq --job-file 230110_speciesPairs_CGIcentric_Noonan_noPromFilter_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END
-sbatch dsq-230110_speciesPairs_CGIcentric_Noonan_noPromFilter_jobFile-2023-01-24.sh # 20240259
+sbatch dsq-230110_speciesPairs_CGIcentric_Noonan_noPromFilter_jobFile-2023-01-24.sh # 20242352
 
 # download for use in R (Fig2_rhesusMouse.R)
 cd /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric
