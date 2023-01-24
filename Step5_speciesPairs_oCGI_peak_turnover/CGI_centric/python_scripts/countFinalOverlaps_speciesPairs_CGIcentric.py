@@ -28,7 +28,7 @@ inFaCountPeaks_B =  open(sys.argv[18],'rt')    # speciesB_reconciledPeaks.faCoun
 whetherToFilter = str(sys.argv[19]) # repeatFilter vs noRepeatFilter
 # filter criteria:
 lengthFilter = 1.25 # length in A / length in B < 1.25 (and reciprocal)
-repeatFilter = 0.0 # no requirement for percentage of length that can be a repeat - could be modified
+repeatFilter = 0.2 # no more than 20% of length is repeat
 nonRepeatLengthFilter = 200 # total non-repeat length > 200bp in both species
 
 if len(sys.argv) > 20:
