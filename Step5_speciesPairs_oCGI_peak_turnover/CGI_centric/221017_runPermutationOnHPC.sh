@@ -15,8 +15,8 @@ do
 done >> 230109_permutation_CGIcentric_jobFile.txt
 
 # run jobs
-dsq --job-file 230109_permutation_CGIcentric_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END
-sbatch dsq-230109_permutation_CGIcentric_jobFile-2023-01-09.sh # 19830066
+dsq --job-file 230109_permutation_CGIcentric_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END --max-jobs 100
+sbatch dsq-230109_permutation_CGIcentric_jobFile-2023-01-24.sh # 20241555
 
 # cat results into single file for further use in R
 cat *_3x3.txt > permutationResults_3x3.txt
