@@ -57,8 +57,8 @@ cd /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric
 # 1) Roller histone data
 rm Roller_summaryFiles/*
 python prepFiles_speciesPairs_CGIcentric_Roller.py /gpfs/gibbs/pi/noonan/ak2267/Roller/peaks/repsToUseRoller.txt repeatFilter > 230107_speciesPairs_CGIcentric_Roller_jobFile.txt
-dsq --job-file 230107_speciesPairs_CGIcentric_Roller_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END
-sbatch dsq-230107_speciesPairs_CGIcentric_Roller_jobFile-2023-01-07.sh # 19817386
+dsq --job-file 230107_speciesPairs_CGIcentric_Roller_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END --max-jobs 30
+sbatch dsq-230107_speciesPairs_CGIcentric_Roller_jobFile-2023-01-24.sh # 20240113
 
 cd /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric
 tar -zcvf Roller_summaryFiles.gz Roller_summaryFiles/
@@ -69,8 +69,8 @@ scp ak2267@ruddle.hpc.yale.edu:/gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcent
 # 2) Liver TF data including CTCF
 rm LiverTF_summaryFiles/*
 python prepFiles_speciesPairs_CGIcentric_LiverTF.py /gpfs/gibbs/pi/noonan/ak2267/LiverTF/peaks/repsToUseLiverTF.txt > 230109_speciesPairs_CGIcentric_LiverTF_jobFile.txt
-dsq --job-file 230109_speciesPairs_CGIcentric_LiverTF_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END
-sbatch dsq-230109_speciesPairs_CGIcentric_LiverTF_jobFile-2023-01-09.sh # 19827714
+dsq --job-file 230109_speciesPairs_CGIcentric_LiverTF_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END --max-jobs 10
+sbatch dsq-230109_speciesPairs_CGIcentric_LiverTF_jobFile-2023-01-24.sh # 20240175
 
 cd /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric
 tar -zcvf LiverTF_summaryFiles.gz LiverTF_summaryFiles/
@@ -81,8 +81,8 @@ scp ak2267@ruddle.hpc.yale.edu:/gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcent
 # 3) Noonan histone data
 rm Noonan_summaryFiles/*
 python prepFiles_speciesPairs_CGIcentric_Noonan.py repeatFilter > 230107_speciesPairs_CGIcentric_Noonan_jobFile.txt
-dsq --job-file 230107_speciesPairs_CGIcentric_Noonan_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END
-sbatch dsq-230107_speciesPairs_CGIcentric_Noonan_jobFile-2023-01-07.sh # 19817735
+dsq --job-file 230107_speciesPairs_CGIcentric_Noonan_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END --max-jobs 10
+sbatch dsq-230107_speciesPairs_CGIcentric_Noonan_jobFile-2023-01-24.sh # 20240194
 
 cd /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric
 tar -zcvf Noonan_summaryFiles.gz Noonan_summaryFiles/
@@ -91,27 +91,29 @@ scp ak2267@ruddle.hpc.yale.edu:/gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcent
 
 
 ######## FOR FIGURE 2
-# Run rheMac10 vs mm39 brain H3K27ac again, but SKIP STEP that removes CGIs overlapping promoter peaks
-# for use in Fig 2 C-F
-# may wish to run rheMac2 vs mm9 for use with brain HiC data for GO analysis
-rm SummaryFiles_noFilter/*
-grep rheMac10_mm39_brain_H3K27ac 230107_speciesPairs_CGIcentric_Roller_jobFile.txt > 230109_runWithoutPromoterFilter_jobFile.txt
-grep rheMac2_mm9_brain_ac_1 230107_speciesPairs_CGIcentric_Noonan_jobFile.txt >> 230109_runWithoutPromoterFilter_jobFile.txt
-# manually edit out promoter filter, and change directories in mkdir/cd and final output step
-# e.g.
-# mkdir Roller_rheMac10_mm39_brain_H3K27ac_noFilter ; cd Roller_rheMac10_mm39_brain_H3K27ac_noFilter; cp /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/consensusCGIs/rheMac10_mm39/rheMac10_mm39_speciesA_reconciledCGI.bed speciesA_intermediate_CGIsnoPromPeak.bed; cp /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/consensusCGIs/rheMac10_mm39/rheMac10_mm39_speciesB_reconciledCGI.bed speciesB_intermediate_CGIsnoPromPeak.bed;
-# /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric/SummaryFiles_noFilter/rheMac10_mm39_brain_H3K27ac.txt
-mkdir SummaryFiles_noFilter # write output to here
+# Run all species pairs with H3K27ac, but remove step that filters oCGIs overlapping peaks associated with promoters and other features
+# Keep filters based on length and repeat content
+# The resulting tables will be used for Figure 2 to assess oCGI numbers across species (the bar plots in Fig 2B)
+# And to assess differences like length and CpG number
 
-dsq --job-file 230109_runWithoutPromoterFilter_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END
-sbatch dsq-230109_runWithoutPromoterFilter_jobFile-2023-01-09.sh # 19828343
+cd /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric
+
+mkdir SummaryFiles_noPromFilter # write output to here
+rm SummaryFiles_noPromFilter/*
+
+python prepFiles_speciesPairs_CGIcentric_Roller_noPromFilter.py /gpfs/gibbs/pi/noonan/ak2267/Roller/peaks/repsToUseRoller.txt repeatFilter > 230110_speciesPairs_CGIcentric_Roller_noPromFilter_jobFile.txt
+dsq --job-file 230110_speciesPairs_CGIcentric_Roller_noPromFilter_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END --max-jobs 10
+sbatch dsq-230110_speciesPairs_CGIcentric_Roller_noPromFilter_jobFile-2023-01-24.sh # 20240243
+
+python prepFiles_speciesPairs_CGIcentric_Noonan_noPromFilter.py repeatFilter > 230110_speciesPairs_CGIcentric_Noonan_noPromFilter_jobFile.txt
+dsq --job-file 230110_speciesPairs_CGIcentric_Noonan_noPromFilter_jobFile.txt --mem-per-cpu 5G -c 1 --mail-type FAIL,END
+sbatch dsq-230110_speciesPairs_CGIcentric_Noonan_noPromFilter_jobFile-2023-01-24.sh # 20240259
 
 # download for use in R (Fig2_rhesusMouse.R)
 cd /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric
-tar -zcvf SummaryFiles_noFilter.gz SummaryFiles_noFilter/
+tar -zcvf SummaryFiles_noPromFilter.gz SummaryFiles_noPromFilter/
 cd /Users/acadiak/Desktop/CGI/speciesPairs/CGIcentric
-scp ak2267@ruddle.hpc.yale.edu:/gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric/SummaryFiles_noFilter.gz .
-# gunzip and rename folder SummaryFiles_noPromoterFilter
+scp ak2267@ruddle.hpc.yale.edu:/gpfs/gibbs/pi/noonan/ak2267/speciesPairs/CGIcentric/SummaryFiles_noPromFilter.gz .
 
 
 ##### put reconciledCGIs and reconciledPeaks on lab server for viewing on the browser
