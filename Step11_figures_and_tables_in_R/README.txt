@@ -13,3 +13,6 @@ Fig3-4_grids.R
 
 Fig3_rhesusMouse_example.R
 # Generate numbers and histogram for example in Fig S3.1
+
+Fig3_peakStatComparisons.R
+# Comparisons of peak strength, phastCons, age, etc
