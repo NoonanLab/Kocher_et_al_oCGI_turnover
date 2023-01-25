@@ -5,7 +5,7 @@ Fig1_peakCentric.R
 Fig2_orthologous_oCGI.R
 # Generate Fig 2B, Fig SX, Table SX
 
-Fig2_rhesusMouse.R
+Fig2_speciesComparisons.R
 # Generate Fig 2C-E, Fig SX
 
 Fig3-4_grids.R 
