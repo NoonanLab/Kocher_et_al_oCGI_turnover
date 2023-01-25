@@ -26,3 +26,7 @@ countBigWigSignal_general.py
 ######### Determine enrichment by shuffling sites on the genome background
 # Use this prepFiles python script to make job files
 prepFiles_singleSpecies_shuffling.py
+
+# Use these python scripts to summarize the results
+summarizeReshuffling_CGI-centric.py
+summarizeReshuffling_peak-centric.py
