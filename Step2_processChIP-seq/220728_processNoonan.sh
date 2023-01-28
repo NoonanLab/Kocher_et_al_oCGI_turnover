@@ -43,39 +43,6 @@ do
 	do name=`basename $file .bed`; awk '{ print $1"\t"$2"\t"$3"\tPeak_"NR}' ${file} > ${species}/${mark}/${name}_named.bed
 	done;done;done
 
-# DOWNLOAD bigWigs & bed files to /home/ak2267/scratch60/HGE 
-# from https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63648
-# overview of data - bigWigs & bed files:
-# time points: 7pcw, 8.5 pcw, 12 pcw F, 12 pcw O
-# marks: H3K27ac, H3K4me3, input (skip)
-# replicates: 2 each
-# plus gain bed files (8 files = 2 marks x 4 time points)
-
-cd /home/ak2267/scratch60/HGE
-# 7 pcw = CS16
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554660/suppl/GSM1554660_Hu_7pcw_H3K27ac_rep1.bw
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554661/suppl/GSM1554661_Hu_7pcw_H3K27ac_rep2.bw
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554662/suppl/GSM1554662_Hu_7pcw_H3K4me2_rep1.bw
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554663/suppl/GSM1554663_Hu_7pcw_H3K4me2_rep2.bw
-
-# 8.5 pcw = CS23
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554666/suppl/GSM1554666_Hu_8_5pcw_H3K27ac_rep1.bw
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554667/suppl/GSM1554667_Hu_8_5pcw_H3K27ac_rep2.bw
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554668/suppl/GSM1554668_Hu_8_5pcw_H3K4me2_rep1.bw
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554669/suppl/GSM1554669_Hu_8_5pcw_H3K4me2_rep2.bw
-
-# 12 pcw F = F2F
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554672/suppl/GSM1554672_Hu_12Fpcw_H3K27ac_rep1.bw
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554673/suppl/GSM1554673_Hu_12Fpcw_H3K27ac_rep2.bw
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554674/suppl/GSM1554674_Hu_12Fpcw_H3K4me2_rep1.bw
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554675/suppl/GSM1554675_Hu_12Fpcw_H3K4me2_rep2.bw
-
-# 12 pcw O = F2O
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554678/suppl/GSM1554678_Hu_12Opcw_H3K27ac_rep1.bw
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554679/suppl/GSM1554679_Hu_12Opcw_H3K27ac_rep2.bw
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554680/suppl/GSM1554680_Hu_12Opcw_H3K4me2_rep1.bw
-wget https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1554nnn/GSM1554681/suppl/GSM1554681_Hu_12Opcw_H3K4me2_rep2.bw
-
 
 # DOWNLOAD bigWigs for hg19, rheMac2, and mm9 - will need to quantify later using consensus peaks and bigWigAverageOverbed
 mkdir /gpfs/gibbs/pi/noonan/ak2267/NoonanBrain
