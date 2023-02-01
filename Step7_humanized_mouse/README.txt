@@ -15,6 +15,17 @@ prepFiles_hs754_ChIP-seq.py
 makeTrackHubFiles.py
 # Make trackDb.txt file for hosting hs754 data on the browser
 
+# Python scripts for the liftOver pipeline involved in aligning WT and humanized peaks ## NEED TO ORGANIZE THIS
+makeHumanizedFasta.py
+prepFiles_hs754_ChIP-seq.py
+makeTrackHubFiles.py
+summarizePeakCategories.py
+moveMm39_toHg38.py
+adjustHUMpeaksInMm39.py
+makeGTF_newPeakNumbers.py
+moveHg38_toHUMmm39.py
+adjustMergedPeaks_inHUMmm39.py
+makeGTF_nameFromCol4.py
 
 ###### RNA-seq ######
 
