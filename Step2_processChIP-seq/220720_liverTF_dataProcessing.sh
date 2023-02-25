@@ -35,7 +35,7 @@ cd /home/ak2267/project/LiverTF/batch
 # https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-1509/
 wget https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-1509/E-MTAB-1509.sdrf.txt
 
-python prepFiles/prepFiles_processLiverTF.py E-MTAB-437.sdrf.txt
+python prepFiles/prepFiles_processLiverTF.py E-MTAB-1509.sdrf.txt
 # makes
 # 220720_downloadFastq_jobFile.txt
 # 220720_fastqc_jobFile.txt
