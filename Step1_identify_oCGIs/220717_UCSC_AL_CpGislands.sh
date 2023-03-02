@@ -6,8 +6,9 @@
 # Example code from running on galGal3 is here
 # https://github.com/ucscGenomeBrowser/kent/blob/master/src/hg/makeDb/doc/galGal3.txt#L649
 
+cd /gpfs/gibbs/pi/noonan/ak2267/genomes/
 # get masked fasta files for all genomes (start with Roller genome versions plus hg38)
-for genome in hg38 rheMac10 calJac4 mm39 rn7 oryCun2 susScr11 canFam6 felCat9 equCab3
+for genome in hg38 rheMac10 calJac4 mm39 rn7 susScr11 canFam6 felCat9 equCab3
 do
     wget https://hgdownload.soe.ucsc.edu/goldenPath/${genome}/bigZips/${genome}.fa.masked.gz
 done
@@ -52,6 +53,37 @@ for species in rheMac10 calJac4 mm39 rn7 susScr11 canFam6 felCat9 equCab3 hg38
 do
     echo $species
     sort -k1,1 -k2,2n ${species}_CGIsAL_unsorted.bed > ${species}_CGIsAL.bed
+done
+
+# merge within 200 bp
+for species in rheMac10 calJac4 mm39 rn7 susScr11 canFam6 felCat9 equCab3 hg38
+do
+    echo $species
+    bedtools merge -d 200 -i ${species}_CGIsAL.bed > ${species}_CGIsAL_merged200.bed
+done
+
+# show difference after merging
+for species in rheMac10 calJac4 mm39 rn7 susScr11 canFam6 felCat9 equCab3 hg38
+do
+    noMerge=$(cat ${species}_CGIsAL.bed | wc -l)
+    yesMerge=$(cat ${species}_CGIsAL_merged200.bed | wc -l)
+    echo $species $noMerge $yesMerge
+done
+
+# rheMac10 89562 77529
+# calJac4 82827 71899
+# mm39 65548 58902
+# rn7 91858 83399
+# susScr11 161000 134252
+# canFam6 127594 104994
+# felCat9 218352 180238
+# equCab3 153498 133232
+# hg38 88722 75980
+
+# rename merged set as regular names
+for species in rheMac10 calJac4 mm39 rn7 susScr11 canFam6 felCat9 equCab3 hg38
+do
+    mv ${species}_CGIsAL_merged200.bed ${species}_CGIsAL.bed
 done
 
 # convert bed to bigBed for viewing on the genome browser
@@ -142,8 +174,35 @@ do
     sort -k1,1 -k2,2n ${species}_CGIsAL_unsorted.bed > ${species}_CGIsAL.bed
 done
 
+# merge within 200 bp
+for species in hg19 rheMac2 mm9
+do
+    echo $species
+    bedtools merge -d 200 -i ${species}_CGIsAL.bed > ${species}_CGIsAL_merged200.bed
+done
+
+# show difference after merging
+for species in hg19 rheMac2 mm9
+do
+    noMerge=$(cat ${species}_CGIsAL.bed | wc -l)
+    yesMerge=$(cat ${species}_CGIsAL_merged200.bed | wc -l)
+    echo $species $noMerge $yesMerge
+done
+
+# hg19 81794 69956
+# rheMac2 77834 68161
+# mm9 67102 60183
+
+# rename merged set as regular names
+for species in hg19 rheMac2 mm9
+do
+    mv ${species}_CGIsAL_merged200.bed ${species}_CGIsAL.bed
+done
+
+
 ########
 # compare numbers from calling de novo in hg19/rheMac2/mm9 to simply lifting from hg38/rheMac10/mm9
+# note that this was done with the UNmerged set of CGIs
 
 cd /home/ak2267/genomes/CGI/UCSC_AL
 
