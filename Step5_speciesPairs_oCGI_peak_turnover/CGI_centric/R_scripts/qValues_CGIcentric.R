@@ -37,4 +37,3 @@ colnames(q_table_4x3)[19:30] <- q_colnames_4x3
 # current version was run with P = 20000 (see 221017_runPermutationOnHPC.sh)
 write.table(q_table_3x3, file='permutation_qAndFD_3x3.txt', quote=F, sep='\t')
 write.table(q_table_4x3, file='permutation_qAndFD_4x3.txt', quote=F, sep='\t')
-
