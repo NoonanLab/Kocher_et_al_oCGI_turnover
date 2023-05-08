@@ -5,13 +5,13 @@
 ### Analyze ChIP-seq data
 hs754_ChIP-seq.sh  
 
-### Calls the following:  
+### Calls the following in python_scripts directory:  
 &emsp;&emsp;makeHumanizedFasta.py - makes humanized fasta file from mm39  
 &emsp;&emsp;prepFiles_bowtieIndexesHs754.py - generates bowtie indexes for WT mouse and humanized mouse  
 &emsp;&emsp;prepFiles_hs754_ChIP-seq.py - makes job files to align, call peaks, and make visualization files  
 &emsp;&emsp;makeTrackHubFiles.py - makes trackDb.txt file for hosting hs754 data on the browser
 
-### Python scripts used for aligning WT and humanized peaks:
+### Python scripts used for aligning WT and humanized peaks (in python_scripts/alignPeaks):
 
 summarizePeakCategories.py  
 moveMm39_toHg38.py  
