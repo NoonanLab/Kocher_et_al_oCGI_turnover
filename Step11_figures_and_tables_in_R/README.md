@@ -9,6 +9,9 @@ Fig1_CGIcentric.R
 Fig1_peakCentric.R  
 &emsp;&emsp;Generates Figure 1C-E; Figures S4-9  
 
+## Orthologous oCGIs across species pairs:
+Figure 2, Figures S11-16
+
 Fig2_orthologous_oCGIs.R  
 &emsp;&emsp;Generates Figure 2B; Figure S11; Table S2  
 
