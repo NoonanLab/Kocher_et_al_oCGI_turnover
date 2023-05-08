@@ -3,7 +3,8 @@ Each .sh file contains commands used for each processing step
 Each .py file is a python script that performs a step in the pipeline (referenced & described in the .sh files)
 
 ## Call CGIs in each genome:
-220717_UCSC_AL_CpGislands.sh
+220717_UCSC_AL_CpGislands.sh  
+&emsp;&emsp;(Calls the script putCpGsInCol4.py which takes the results of faCount to put the number of CpGs in a CGI in column 4 of a bed file)
 
 Genome versions used for integrating with data from Roller & Stamper et al 2021:  
 &emsp;&emsp;rheMac10, calJac4, mm39, rn7, susScr11, canFam6, felCat9, equCab3  
