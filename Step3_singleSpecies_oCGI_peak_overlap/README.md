@@ -12,7 +12,8 @@ singleSpecies_oCGIs_peaks.sh
 
 ## Make summary tables for Peak-centric analysis (for use in R)
 singleSpecies_oCGIs_peaks.sh  
-&emsp;&emsp;Calls prepFiles_singleSpecies_peakCentric.py
+&emsp;&emsp;Calls prepFiles_singleSpecies_peakCentric.py  
+&emsp;&emsp;Calls makeSummary_singleSpecies_peakCentric.py
 
 ## These scripts also reference the following that are in the python_scripts directory in the main repository:
 makeGTF_nameFromCol4.py  
