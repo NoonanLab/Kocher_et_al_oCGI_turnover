@@ -9,11 +9,11 @@ Fig1_CGIcentric.R
 Fig1_peakCentric.R  
 &emsp;&emsp;Generates Figure 1C-E, Figures S4-9  
 
-Fig2_orthologous_oCGIs.R
-&emsp;&emsp;Generates Figure 2B, Figure S11, Table S2
+Fig2_orthologous_oCGIs.R  
+&emsp;&emsp;Generates Figure 2B, Figure S11, Table S2  
 
-Fig2_speciesComparisons.R
-&emsp;&emsp;Generates Figure 2C-E, Figure S12-16
+Fig2_speciesComparisons.R  
+&emsp;&emsp;Generates Figure 2C-E, Figure S12-16  
 
 Fig3-4_grids.R 
 ## Generate heatmap grids in Fig 3 & 4
