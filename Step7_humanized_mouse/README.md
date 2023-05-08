@@ -20,7 +20,7 @@ makeGTF_newPeakNumbers.py
 moveHg38_toHUMmm39.py  
 adjustMergedPeaks_inHUMmm39.py  
 
-### Also uses script in main repository's python_scripts directory
+### Also uses script in main repository's python_scripts directory:
 makeGTF_nameFromCol4.py
 
 ## RNA-seq
