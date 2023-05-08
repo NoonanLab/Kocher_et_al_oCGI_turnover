@@ -12,7 +12,7 @@ All of these job files create intermediate files, then call a python script that
 &emsp;&emsp;countFinalOverlaps_speciesPairs_CGIcentric.py
 
 ### Run permutation test to assess enrichment in each box in the grid using R on the cluster
-runPermutationOnHPC_oCGI-centric.sh
+runPermutationOnHPC_oCGI-centric.sh  
 &emsp;&emsp;Calls speciesPairs_permutation_HPC_oCGI-centric.R
 
 ### Analyze permutation results in R - convert p values to q values with correction for multiple testing, and report Fold Differences (FD)
@@ -30,7 +30,7 @@ Calls several python scripts to make slurm job files:
 &emsp;&emsp;prepFiles_speciesPairs_peakCentric_Noonan.py
 
 ### Run permutation test to assess enrichment in each box in the grid using R on the cluster
-runPermutationOnHPC_peak-centric.sh
+runPermutationOnHPC_peak-centric.sh  
 &emsp;&emsp;Calls speciesPairs_permutation_HPC_peak-centric.R
 
 ### Analyze permutation results in R - convert p values to q values with correction for multiple testing, and report Fold Differences (FD)
