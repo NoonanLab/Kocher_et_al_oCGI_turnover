@@ -4,7 +4,7 @@ Each .py file is a python script that performs a step in the pipeline (reference
 
 ## Call CGIs in each genome:
 UCSC_AL_CpGislands.sh  
-&emsp;&emsp;(Calls the script python_scripts/putCpGsInCol4.py which takes the results of faCount to put the number of CpGs in a CGI in column 4 of a bed file)
+&emsp;&emsp;Calls putCpGsInCol4.py which takes the results of faCount to put the number of CpGs in a CGI in column 4 of a bed file
 
 Genome versions used for integrating with data from Roller & Stamper et al 2021:  
 &emsp;&emsp;rheMac10, calJac4, mm39, rn7, susScr11, canFam6, felCat9, equCab3  
@@ -13,7 +13,7 @@ Genome versions used for integrating with data from Reilly, Yin et al 2015 and C
 
 ## Generate bed files with feature annotations (RefSeq for all genomes, FANTOM & ENCODE blacklist for human and mouse) for filtlering CGIs to oCGIs  
 RefSeq: annotateRefSeqFeatures.sh  
-&emsp;&emsp;(Calls the script python_scripts/makeCategoryBedFiles_plusIntrons_chrSize.py to generate bed files with RefSeq annotated features)
+&emsp;&emsp;Calls makeCategoryBedFiles_plusIntrons_chrSize.py to generate bed files with RefSeq annotated features
 FANTOM: annotateFANTOMfeatures.sh  
 ENCODE blacklist: annotateENCODEblacklist.sh
 
