@@ -1,5 +1,6 @@
 # 3/5/23
 # Purpose: take output of faCount and output as a bed file, with number of CpGs in column 4
+# to match bed format output by UCSC AL script, which is required for subsequent pipeline steps
 
 import sys
 
