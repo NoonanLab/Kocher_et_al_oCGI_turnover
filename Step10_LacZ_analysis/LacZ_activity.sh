@@ -13,14 +13,14 @@
 
 # copy files to Ruddle
 cd /Users/acadiak/Desktop/CGI/ENCODE_LacZ
-scp acadia/2022-07-15_Acadia.tsv ak2267@ruddle.hpc.yale.edu:/gpfs/gibbs/pi/noonan/ak2267/VISTA
+scp acadia/2022-07-15_VISTA.tsv ak2267@ruddle.hpc.yale.edu:/gpfs/gibbs/pi/noonan/ak2267/VISTA
 scp acadia/tissue.dictionary.csv ak2267@ruddle.hpc.yale.edu:/gpfs/gibbs/pi/noonan/ak2267/VISTA
 
 # to Ruddle
 cd /gpfs/gibbs/pi/noonan/ak2267/VISTA
 
 # script to process into bed files for each species x timePoint x backbone, then delete empty files since I didn't do so from within the python script
-python makeManyBedsFromVISTA.py 2022-07-15_Acadia.tsv tissue.dictionary.csv
+python makeManyBedsFromVISTA.py 2022-07-15_VISTA.tsv tissue.dictionary.csv
 find . -empty -delete 
 
 ####### STEP 2: download bed files for each mark in e11.5 tissues - THIS IS IN mm10!
