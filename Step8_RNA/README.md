@@ -6,10 +6,6 @@ RollerRNA.sh
 ### Calls the following:  
 convertChrNamesToUCSCinGTF.py  
 &emsp;&emsp;convert Ensembl chromosome names to be compatible with UCSC (add "chr" before numbers)  
-assessOrthologDistribution.py  
-&emsp;&emsp;count 1:1 orthologs that fall on unassembled contigs; very few, so I exclude them  
-assessNumberOfOrthologs.py  
-&emsp;&emsp;count 1:1 orthologs that are 1:1 instead of 1:many or many:1 or many:many - minority, so I exclude them  
 prepFiles_RollerRNA_Nov22.py  
 &emsp;&emsp;process RNA-seq data: download, align, count reads in genes  
 outputCGIsAsBed.py  
