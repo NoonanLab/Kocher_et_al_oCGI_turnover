@@ -12,8 +12,6 @@ outputCGIsAsBed.py
 &emsp;&emsp;within each species pair, tissue, and mark:  
 &emsp;&emsp;make bed files with (1) A-only oCGIs in A-only peaks, (2) with B-only oCGIs in B-only peaks  
 &emsp;&emsp;where names in column 4 tell their species-specificity  
-outputUniqueBiotype.py  
-&emsp;&emsp;output a list of all unique biotypes in Ensembl GTF files, for identifying protein-coding genes in makeCategoryBedFiles_ENSEMBL.py  
 makeCategoryBedFiles_ENSEMBL.py  
 &emsp;&emsp;input GTF file, output bed files for all feature types; want to use protein-coding promoters  
 extendRegulatoryDomains.py  
