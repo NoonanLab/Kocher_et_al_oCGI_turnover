@@ -1,31 +1,21 @@
-# This directory contains scripts for calling CGIs in each genome
-# And for generating feature annotations in each genome, which will be used to filter CGIs to oCGIs (RefSeq, FANTOM, ENCODE blacklist)
-# Finally download phastCons and RepeatMasker data for use downstream
+# Step 1: identify oCGIs
+Each .sh file contains commands used for each processing step
+Each .py file is a python script that performs a step in the pipeline
 
-# Genome versions used for integrating with data from Roller & Stamper et al 2021: rheMac10, calJac4, mm39, rn7, susScr11, canFam6, felCat9, equCab3
-# Genome versions used for integrating with data from Reilly, Yin et al 2015 and Cotney, Leng et al 2013: hg19, rheMac2, mm9
-
-#########
-Call CGIs in each genome:
+## Call CGIs in each genome:
 220717_UCSC_AL_CpGislands.sh
 
-#########
-Generate bed files for feature annotations in each species (based on RefSeq, FANTOM TSSs, and ENCODE blacklist regions)
+Genome versions used for integrating with data from Roller & Stamper et al 2021:  
+&emsp;&emsp;rheMac10, calJac4, mm39, rn7, susScr11, canFam6, felCat9, equCab3  
+Genome versions used for integrating with data from Reilly, Yin et al 2015 and Cotney, Leng et al 2013:  
+&emsp;&emsp;hg19, rheMac2, mm9
 
-RefSeq
-220724_annotateFeatures.sh
-^Calls the script python_scripts/makeCategoryBedFiles_plusIntrons_chrSize.py - to generate bed files with RefSeq annotated features
+## Generate bed files with feature annotations (RefSeq for all genomes, FANTOM & ENCODE blacklist for human and mouse) for filtlering CGIs to oCGIs  
+RefSeq: 220724_annotateFeatures.sh  
+&emsp;&emsp;(Calls the script python_scripts/makeCategoryBedFiles_plusIntrons_chrSize.py to generate bed files with RefSeq annotated features)
+FANTOM: 220616_FANTOM_data.sh  
+ENCODE blacklist: 220725_blacklist.sh
 
-FANTOM
-220616_FANTOM_data.sh
-
-ENCODE blacklist
-220725_blacklist.sh
-
-#########
-Download phastCons data and age segmentation data (from Emera, Yin et al 2016) for use downstream
-220729_phastCons_ageSegmentation.sh
-
-#########
-Download RepeatMasker data for use downstream
-220725_rmsk.sh
+## Download phastCons, age segmentation (Emera, Yin et al 2016), and RepeatMasker data for use in downstream analysis
+PhastCons and age segmentation: 220729_phastCons_ageSegmentation.sh
+RepeatMasker: 220725_rmsk.sh
