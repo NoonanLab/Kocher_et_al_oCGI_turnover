@@ -12,7 +12,7 @@ All of these job files create intermediate files, then call a python script that
 &emsp;&emsp;countFinalOverlaps_speciesPairs_CGIcentric.py
 
 ### Make files for trackHub with all ChIP-seq data, plus all CGIs and orthologous oCGIs
-makeTrackDb.py
+makeTrackDb.py  
 makeTrackDb_Noonan.py
 
 ### Run permutation test to assess enrichment in each box in the grid using R on the cluster
@@ -22,14 +22,14 @@ makeTrackDb_Noonan.py
 qValues_CGIcentric.R
 
 ### CGI-centric analysis but without step that removes oCGIs overlapping promoter peaks - for use in Fig 2
-prepFiles_speciesPairs_CGIcentric_Roller_noPromFilter.py
+prepFiles_speciesPairs_CGIcentric_Roller_noPromFilter.py  
 prepFiles_speciesPairs_CGIcentric_Noonan_noPromFilter.py
 
 ## PEAK-CENTRIC ANALYSIS in sub-directory Peak_centric/
 221130_speciesPairs_peakCentric.sh - generates a table for each species pair x tissue x mark x time point for analysis downstream in R
 
-Calls several python scripts to make slurm job files:
-&emsp;&emsp;prepFiles_speciesPairs_peakCentric_Roller.py
+Calls several python scripts to make slurm job files:  
+&emsp;&emsp;prepFiles_speciesPairs_peakCentric_Roller.py  
 &emsp;&emsp;prepFiles_speciesPairs_peakCentric_Noonan.py
 
 ### Run permutation test to assess enrichment in each box in the grid using R on the cluster
