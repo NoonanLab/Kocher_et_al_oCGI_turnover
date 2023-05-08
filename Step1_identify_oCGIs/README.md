@@ -1,6 +1,6 @@
 # Step 1: identify oCGIs
-Each .sh file contains commands used for each processing step
-Each .py file is a python script that performs a step in the pipeline
+Each .sh file contains commands used for each processing step  
+The referenced .py file is a python script that performs a step in the pipeline
 
 ## Call CGIs in each genome:
 220717_UCSC_AL_CpGislands.sh
