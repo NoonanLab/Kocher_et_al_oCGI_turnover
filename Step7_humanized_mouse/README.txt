@@ -1,37 +1,33 @@
-# Files used in analysis of data generated from humanized mouse line experiments
+# Step 7: humanized mouse experiments
 
+## ChIP-seq
 
-###### ChIP-seq ######
+### Analyze ChIP-seq data
+hs754_ChIP-seq.sh  
 
-hs754_ChIP-seq.sh
-# Analysis of ChIP-seq from hs754
+### Calls the following:  
+&emsp;&emsp;makeHumanizedFasta.py - makes humanized fasta file from mm39  
+&emsp;&emsp;prepFiles_bowtieIndexesHs754.py - generates bowtie indexes for WT mouse and humanized mouse  
+&emsp;&emsp;prepFiles_hs754_ChIP-seq.py - makes job files to align, call peaks, and make visualization files  
+&emsp;&emsp;makeTrackHubFiles.py - makes trackDb.txt file for hosting hs754 data on the browser
 
-prepFiles_bowtieIndexesHs754.py
-# Generate bowtie indexes for WT mouse and humanized mouse (by swapping human sequence into mm39 fasta file)
+### Python scripts used for aligning WT and humanized peaks:
 
-prepFiles_hs754_ChIP-seq.py
-# Make job files to align, call peaks, and make visualization files for ChIP-seq data
+summarizePeakCategories.py  
+moveMm39_toHg38.py  
+adjustHUMpeaksInMm39.py  
+makeGTF_newPeakNumbers.py  
+moveHg38_toHUMmm39.py  
+adjustMergedPeaks_inHUMmm39.py  
 
-makeTrackHubFiles.py
-# Make trackDb.txt file for hosting hs754 data on the browser
-
-# Python scripts for the liftOver pipeline involved in aligning WT and humanized peaks ## NEED TO ORGANIZE THIS
-makeHumanizedFasta.py
-prepFiles_hs754_ChIP-seq.py
-makeTrackHubFiles.py
-summarizePeakCategories.py
-moveMm39_toHg38.py
-adjustHUMpeaksInMm39.py
-makeGTF_newPeakNumbers.py
-moveHg38_toHUMmm39.py
-adjustMergedPeaks_inHUMmm39.py
+### Also uses script in main repository's python_scripts directory
 makeGTF_nameFromCol4.py
 
-###### RNA-seq ######
+## RNA-seq
 
+### Analyze RNA-seq data
 hs754_RNA-seq.sh
-# Analysis of RNA-seq from hs754
 
-prepFiles_hs754_RNA-seq.py
-# Make job files to align (and count, included in STAR command) RNA-seq data
+### Calls the following:
+&emsp;&emsp;prepFiles_hs754_RNA-seq.py - makes job files to align (and count, included in STAR command)
 
