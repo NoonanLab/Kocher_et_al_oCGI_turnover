@@ -8,7 +8,7 @@ convertChrNamesToUCSCinGTF.py - convert Ensembl chromosome names to be compatibl
 assessOrthologDistribution.py - count 1:1 orthologs that fall on unassembled contigs - very few, so I exclude them  
 assessNumberOfOrthologs.py - count 1:1 orthologs that are 1:1 instead of 1:many or many:1 or many:many - minority, so I exclude them  
 prepFiles_RollerRNA_Nov22.py - process RNA-seq data: download, align, count reads in genes  
-outputCGIsAsBed.py - within each species pair, tissue, and mark:
+outputCGIsAsBed.py - within each species pair, tissue, and mark:  
 &emsp;&emsp;make bed file with A-only oCGIs in A-only peaks, and a bed file with B-only oCGIs in B-only peaks, with names in column 4 telling their species-specificity  
 outputUniqueBiotype.py - output a list of all unique biotypes in Ensembl GTF files, for identifying protein-coding genes in makeCategoryBedFiles_ENSEMBL.py  
 makeCategoryBedFiles_ENSEMBL.py - input GTF file, output bed files for all feature types; want to use protein-coding promoters  
