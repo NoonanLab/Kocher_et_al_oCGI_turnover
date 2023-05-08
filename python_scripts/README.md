@@ -4,7 +4,7 @@
 restrictToSitesThatMapBack.py  
 restrictToLO.py
 
-## To sort the names in column 4 of a bed file, given that format involves mix of a_#### and b_####
+## To sort the names in column 4 of a bed file, given that format involves mix of a_# and b_#
 sortRegionNames.py 
 
 ## To make a GTF file from a BED file, taking the "exon" name from column 4 of the bed file - often is a bed file of ChIP peaks, not exons
