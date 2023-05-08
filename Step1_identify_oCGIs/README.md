@@ -18,5 +18,5 @@ FANTOM: annotateFANTOMfeatures.sh
 ENCODE blacklist: annotateENCODEblacklist.sh
 
 ## Download phastCons, age segmentation (Emera, Yin et al 2016), and RepeatMasker data for use in downstream analysis
-PhastCons and age segmentation: phastCons_ageSegmentation.sh
+PhastCons and age segmentation: phastCons_ageSegmentation.sh  
 RepeatMasker: rmsk.sh
