@@ -1,5 +1,5 @@
-# Identification of orthologous oCGIs between all species pairs in the analysis
-220730_orthologousCGIs.sh
+# Step 4: identify orthologous oCGIs between all species pairs in the analysis
 
-# Calls this python script to generate job files (in folder python_scripts)
-prepFiles_consensusCGIs.py
+## Identify orthologous oCGIs
+220730_orthologousCGIs.sh  
+&emsp;&emsp;Calls prepFiles_consensusCGIs.py
