@@ -1,6 +1,6 @@
 # Step 11: generate figures and tables in R
 
-## oCGI and peak overlap in single species:
+## Overlap of oCGIs and peaks in single species:
 
 Fig1_CGIcentric.R  
 &emsp;&emsp;Generates Figure 1A-B; Figure S3  
