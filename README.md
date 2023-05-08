@@ -1,4 +1,4 @@
-# Kocher_et_al_CpG
+# Kocher et al (2023), oCGI turnover
 Analysis pipeline for Kocher et al (2023)  
 
 This repository contains a separate directory for each step of the analysis (Step 1 through Step 11)  
