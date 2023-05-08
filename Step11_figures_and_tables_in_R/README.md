@@ -1,3 +1,14 @@
+# Step 1: identify oCGIs
+Each .sh file contains commands used for each processing step  
+Each .py file is a python script that performs a step in the pipeline (referenced & described in the .sh files)
+
+## Call CGIs in each genome:
+UCSC_AL_CpGislands.sh  
+&emsp;&emsp;Calls putCpGsInCol4.py which takes the results of faCount to put the number of CpGs in a CGI in column 4 of a bed file
+
+
+
+
 Fig1_CGIcentric.R
 Fig1_peakCentric.R
 ## Generate Fig 1, Fig SX-Y
