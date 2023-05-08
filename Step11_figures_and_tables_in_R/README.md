@@ -55,7 +55,7 @@ Fig6_Roller_RNA.R
 &emsp;&emsp;Generates Figure 6; Figure S35-38
 
 ## LacZ analysis
-FigSupp_LacZ_activity.R
+FigSupp_LacZ_activity.R  
 &emsp;&emsp;Generates Figure S2; Table S1
 
 ## oCGIs in phastBias tracts
