@@ -192,3 +192,4 @@ for (i in 1:length(comboList)) {
 write.table(t(data.frame(c(infoList, FD_list, p_list))), 
             file = paste(label, '_', dimensions, 'x3.txt', sep = ''), 
             sep = '\t', row.names = F, col.names = F, quote = F)
+
