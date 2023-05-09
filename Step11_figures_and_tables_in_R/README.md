@@ -62,5 +62,10 @@ FigSupp_LacZ_activity.R
 FigSupp_phastBias.R  
 &emsp;&emsp;Generates Figure S40
 
+## Files with coordinates and details of alignment for specific example sites shown in figures (in directory "exampleSites/"):
+Fig2-3_exampleSites.sh  
+&emsp;&emsp;Info on example loci used in Figure 2A and Figure 3B
 
+Fig7_exampleSites_CTCF.sh
+&emsp;&emsp;Info on example loci used in Figure 7A
 
