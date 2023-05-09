@@ -11,7 +11,7 @@ Genome versions used for integrating with data from Roller & Stamper et al 2021:
 Genome versions used for integrating with data from Reilly, Yin et al 2015 and Cotney, Leng et al 2013:  
 &emsp;&emsp;hg19, rheMac2, mm9
 
-## Generate bed files with feature annotations (RefSeq for all genomes, FANTOM & ENCODE blacklist for human and mouse) for filtlering CGIs to oCGIs  
+## Generate bed files with feature annotations (RefSeq for all genomes, FANTOM & ENCODE blacklist for human and mouse) for filtering CGIs to oCGIs  
 RefSeq: annotateRefSeqFeatures.sh  
 &emsp;&emsp;Calls makeCategoryBedFiles_plusIntrons_chrSize.py to generate bed files with RefSeq annotated features
 FANTOM: annotateFANTOMfeatures.sh  
