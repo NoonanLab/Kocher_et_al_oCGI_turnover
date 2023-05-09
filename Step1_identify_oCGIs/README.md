@@ -13,7 +13,7 @@ Genome versions used for integrating with data from Reilly, Yin et al 2015 and C
 
 ## Generate bed files with feature annotations (RefSeq for all genomes, FANTOM & ENCODE blacklist for human and mouse) for filtering CGIs to oCGIs  
 RefSeq: annotateRefSeqFeatures.sh  
-&emsp;&emsp;Calls makeCategoryBedFiles_plusIntrons_chrSize.py to generate bed files with RefSeq annotated features
+&emsp;&emsp;Calls makeCategoryBedFiles_plusIntrons_chrSize.py to generate bed files with RefSeq annotated features  
 FANTOM: annotateFANTOMfeatures.sh  
 ENCODE blacklist: annotateENCODEblacklist.sh
 
