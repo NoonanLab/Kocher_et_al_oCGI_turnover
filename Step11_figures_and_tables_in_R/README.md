@@ -66,6 +66,6 @@ FigSupp_phastBias.R
 Fig2-3_exampleSites.sh  
 &emsp;&emsp;Info on example loci used in Figure 2A and Figure 3B
 
-Fig7_exampleSites_CTCF.sh
+Fig7_exampleSites_CTCF.sh  
 &emsp;&emsp;Info on example loci used in Figure 7A
 
