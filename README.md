@@ -1,5 +1,6 @@
-# Kocher et al (2023), oCGI turnover
-Analysis pipeline for Kocher et al (2023)  
+# Analysis pipeline for Kocher et al (2023)
+CpG island turnover events predict evolutionary changes in enhancer activity  
+bioRxiv https://doi.org/10.1101/2023.05.09.540063  
 
 This repository contains a separate directory for each step of the analysis (Step 1 through Step 11)  
 
