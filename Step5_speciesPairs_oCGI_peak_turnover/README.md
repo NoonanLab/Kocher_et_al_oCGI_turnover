@@ -35,3 +35,9 @@ runPermutationOnHPC_peak-centric.sh
 
 ### Analyze permutation results in R - convert p values to q values with correction for multiple testing, and report Fold Differences (FD)
 qValues_peak-centric.R
+
+
+
+## Test minimal difference requirement for CpG Obs/Exp ratio (Figure S30) in sub-directory Minimal_diff_req/
+minimalDifferenceRequirement.sh  
+&emsp;&emsp;
