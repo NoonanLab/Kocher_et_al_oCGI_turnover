@@ -1,6 +1,8 @@
 # 2/3/23
 # Copy number qPCR to verify the mouse line
 
+# THIS WAS FORMERLY FIGURE 5 - NOW REVISED FIGURE 4
+
 require(tidyverse)
 require(ggplot2)
 require(cowplot)
