@@ -54,9 +54,19 @@ Fig5_hs754_RNA-seq.R
 Fig6_Roller_RNA.R  
 &emsp;&emsp;Generates Figure 6; Figure S35-38
 
-## LacZ analysis
+## Analysis of predictive power of histone modifications for enhancer activity
 FigSupp_LacZ_activity.R  
-&emsp;&emsp;Generates Figure S2; Table S1
+&emsp;&emsp;Generates Figure S3; Table S1  
+FigSupp_histone_mods_predict_looping.R  
+&emsp;&emsp;Generates Figure S4  
+
+## cCRE definitions of oCGIs
+FigSupp_oCGI_cCRE_overlap.R  
+&emsp;&emsp;Generates Figure S6
+
+## Comparison of CGI maps
+FigSupp_Model-based_CGIs.R  
+&emsp;&emsp;Generates Figure S2  
 
 ## oCGIs in phastBias tracts
 FigSupp_phastBias.R  
