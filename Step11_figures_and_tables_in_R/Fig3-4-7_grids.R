@@ -1,5 +1,7 @@
 # 10/24/22
-# Purpose: generate 3 x 3 grids for use in Fig 3, Fig 4, and Fig 7
+# Purpose: generate 3 x 3 grids for use in Fig 3, Fig 4, and Fig 6
+
+# THIS WAS FORMERLY FIGURE 3/5/7 - NOW REVISED FIGURE 3/5/6
 
 require(ggplot2)
 require(tidyverse)
