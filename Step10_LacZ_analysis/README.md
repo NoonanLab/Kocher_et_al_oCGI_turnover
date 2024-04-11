@@ -2,7 +2,7 @@
 Determining whether histone modification peaks predict LacZ reporter activity (Fig S3)
 And whether histone modification peaks predict enhancer-promoter looping (Fig S4)
 
-## Generate summary tables for use in R:
+## Generate summary tables for use in R for LacZ analysis:
 LacZ_activity.sh  
 
 Calls the following scripts:  
@@ -21,7 +21,7 @@ tissue.dictionary.csv
 &emsp;&emsp;File for interpreting shorthand codes for tissues where enhancers were active  
 
 
-## Generate summary tables for use in R:
+## Generate summary tables for use in R for looping analysis:
 histone_mods_predict_looping.sh  
 &emsp;&emsp;Incorporate data from Schoenfelder et al 2015  
 &emsp;&emsp;Calls makeSummaryTableForR_looping.py
