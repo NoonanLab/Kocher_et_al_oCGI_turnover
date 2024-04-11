@@ -1,6 +1,8 @@
 # 11/22/22
 # Purpose: analyze + make plots for Roller RNA data
 
+# THIS WAS FORMERLY FIGURE 6 - NOW REVISED FIGURE 5
+
 require(tidyverse)
 require(RColorBrewer)
 require(patchwork)
