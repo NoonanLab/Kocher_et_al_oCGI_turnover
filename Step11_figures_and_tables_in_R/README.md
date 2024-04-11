@@ -68,6 +68,10 @@ FigSupp_oCGI_cCRE_overlap.R
 FigSupp_Model-based_CGIs.R  
 &emsp;&emsp;Generates Figure S2  
 
+## Polarize oCGI gain and loss
+FigSupp_gain_vs_loss.R  
+&emsp;&emsp;Generates Figure S21
+
 ## oCGIs in phastBias tracts
 FigSupp_phastBias.R  
 &emsp;&emsp;Generates Figure S40
