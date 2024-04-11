@@ -3,29 +3,29 @@
 ## Overlap of oCGIs and peaks in single species:
 
 Fig1_CGIcentric.R  
-&emsp;&emsp;Generates Figure 1A-B; Figure S3  
+&emsp;&emsp;Generates Figure 1A-B; Figure S5  
 
 Fig1_peakCentric.R  
-&emsp;&emsp;Generates Figure 1C-E; Figures S4-9  
+&emsp;&emsp;Generates Figure 1C-E; Figures S7-12  
 
 ## Orthologous oCGIs across species pairs:
 
 Fig2_orthologous_oCGIs.R  
-&emsp;&emsp;Generates Figure 2B; Figure S11; Table S2  
+&emsp;&emsp;Generates Figure 2B; Figure S14; Table S2  
 
 Fig2_speciesComparisons.R  
-&emsp;&emsp;Generates Figure 2C-E; Figure S12-16  
+&emsp;&emsp;Generates Figure 2C-E; Figure S15-20  
 
 ## Overlap of species-specific oCGIs with species-specific peaks:
 
 Fig3_rhesusMouse_example.R  
-&emsp;&emsp;Generates example grid and histogram in Figure S17  
+&emsp;&emsp;Generates example grid and histogram in Figure S22  
 
 Fig3-4-7_grids.R  
-&emsp;&emsp;Generates Figure 3C-D, 4A, 7B-C; Figure S18-23, S27, S39; Table S3  
+&emsp;&emsp;Generates Figure 3C-D, 4A, 7B-C; Figure S23-28, S33, S46; Table S3  
 
 Fig3_peakStatComparisons.R  
-&emsp;&emsp;Generates Figure 3E; Figures S24-25 
+&emsp;&emsp;Generates Figure 3E; Figures S31-32 
 
 ## Minimal difference requirement
 
@@ -35,29 +35,29 @@ FigSupp_differenceRequirement.R
 ## Overlap of species-specific peaks with species-specific oCGIs (peak-centric analysis):
 
 Fig3_supp_grids_peakCentric.R  
-&emsp;&emsp;Generates Figure S26; Table S4  
+&emsp;&emsp;Generates Figure S29; Table S4  
 
 ## oCGI species patterns in HGEs versus non-HGEs:
 
 Fig4_HGEs.R  
-&emsp;&emsp;Generates Figure 4B; Figure S28-29; Table S6
+&emsp;&emsp;Generates Figure 4B; Figure S34-35; Table S6
 
 ## Copy number qPCR for hs754 humanized mouse line validation:
 Fig5_validation  
-&emsp;&emsp;Generates Figure S30D
+&emsp;&emsp;Generates Figure S37D
 
 ## ChIP-seq in the hs754 humanized mouse line:
 Fig5_hs754_ChIP-seq.R  
-&emsp;&emsp;Generates differential peak calls in Figure 5B-C, Figure S31, and Figure S34  
-&emsp;&emsp;Generates Figure S32; Table S9
+&emsp;&emsp;Generates differential peak calls in Figure 4C, Figure S38, and Figure S41
+&emsp;&emsp;Generates Figure S39; Table S9
 
 ## RNA-seq in the hs754 humanized mouse line:
 Fig5_hs754_RNA-seq.R  
-&emsp;&emsp;Generates Figure S33; Table S10
+&emsp;&emsp;Generates Figure S40; Table S10
 
 ## Association of species-specific oCGIs in species-specific peaks and gene expression changes:
 Fig6_Roller_RNA.R  
-&emsp;&emsp;Generates Figure 6; Figure S35-38
+&emsp;&emsp;Generates Figure 5; Figure S42-45
 
 ## Analysis of predictive power of histone modifications for enhancer activity
 FigSupp_LacZ_activity.R  
@@ -79,7 +79,7 @@ FigSupp_gain_vs_loss.R
 
 ## oCGIs in phastBias tracts
 FigSupp_phastBias.R  
-&emsp;&emsp;Generates Figure S40
+&emsp;&emsp;Generates Figure S47
 
 ## Files with coordinates and details of alignment for specific example sites shown in figures (in directory "exampleSites/"):
 Fig2-3_exampleSites.sh  
