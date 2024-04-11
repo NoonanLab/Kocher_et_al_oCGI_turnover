@@ -1,6 +1,8 @@
 # 2/24/23
 # Purpose: choose and visualize example sites for rhesus vs mouse CTCF binding
 
+# THIS WAS FORMERLY FOR FIGURE 7 - NOW REVISED FIGURE 6
+
 cd /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/consensusCGIs/rheMac10_mm39
 
 #########
