@@ -2,6 +2,8 @@
 # Purpose: analyze ChIP-seq data from hs754 humanized mouse 
 # using DESeq2 to identify differential peaks between WT and HUM
 
+# THIS WAS FOREMERLY FIGURE 5 - NOW IN REVISED FIGURE 4
+
 require(DESeq2)
 require(tidyverse)
 require(purrr)
