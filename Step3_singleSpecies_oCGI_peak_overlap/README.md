@@ -21,3 +21,7 @@ countRPM_general.py
 countBigWigSignal_general.py  
 restrictToSitesThatMapBack.py  
 restrictToLO.py  
+
+
+## Characterize cCRE type distribution for oCGIs
+ENCODE_cCREs.sh  
