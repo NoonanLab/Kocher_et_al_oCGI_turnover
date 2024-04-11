@@ -48,7 +48,7 @@ Fig4_validation
 
 ## ChIP-seq in the hs754 humanized mouse line:
 Fig4_hs754_ChIP-seq.R  
-&emsp;&emsp;Generates differential peak calls in Figure 4C, Figure S38, and Figure S41
+&emsp;&emsp;Generates differential peak calls in Figure 4C, Figure S38, and Figure S41  
 &emsp;&emsp;Generates Figure S39; Table S9
 
 ## RNA-seq in the hs754 humanized mouse line:
