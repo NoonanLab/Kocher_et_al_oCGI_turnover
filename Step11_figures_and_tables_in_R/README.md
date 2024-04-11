@@ -25,7 +25,12 @@ Fig3-4-7_grids.R
 &emsp;&emsp;Generates Figure 3C-D, 4A, 7B-C; Figure S18-23, S27, S39; Table S3  
 
 Fig3_peakStatComparisons.R  
-&emsp;&emsp;Generates Figure 3E; Figures S24-25  
+&emsp;&emsp;Generates Figure 3E; Figures S24-25 
+
+## Minimal difference requirement
+
+FigSupp_differenceRequirement.R  
+&emsp;&emsp;Generates Figure S30  
 
 ## Overlap of species-specific peaks with species-specific oCGIs (peak-centric analysis):
 
