@@ -1,5 +1,6 @@
-# Step 10: LacZ analysis
-Determining whether histone modification peaks predict LacZ reporter activity (Fig S2)
+# Step 10: LacZ analysis and looping analysis
+Determining whether histone modification peaks predict LacZ reporter activity (Fig S3)
+And whether histone modification peaks predict enhancer-promoter looping (Fig S4)
 
 ## Generate summary tables for use in R:
 LacZ_activity.sh  
@@ -18,3 +19,9 @@ And the following files provided by Dr. Len Pennacchio:
 &emsp;&emsp;Summary of the current VISTA database  
 tissue.dictionary.csv  
 &emsp;&emsp;File for interpreting shorthand codes for tissues where enhancers were active  
+
+
+## Generate summary tables for use in R:
+histone_mods_predict_looping.sh  
+&emsp;&emsp;Incorporate data from Schoenfelder et al 2015  
+&emsp;&emsp;Calls makeSummaryTableForR_looping.py
