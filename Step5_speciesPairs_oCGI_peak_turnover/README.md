@@ -40,4 +40,5 @@ qValues_peak-centric.R
 
 ## Test minimal difference requirement for CpG Obs/Exp ratio (Figure S30) in sub-directory Minimal_diff_req/
 minimalDifferenceRequirement.sh  
-&emsp;&emsp;
+&emsp;&emsp;Re-runs the oCGI-centric pipeline with some modifications for assessing changes  
+&emsp;&emsp;Also contains code for generating revised Fig S17 (showing Obs/Exp CpG ratio across species)
