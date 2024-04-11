@@ -20,3 +20,9 @@ ENCODE blacklist: annotateENCODEblacklist.sh
 ## Download phastCons, age segmentation (Emera, Yin et al 2016), and RepeatMasker data for use in downstream analysis
 PhastCons and age segmentation: phastCons_ageSegmentation.sh  
 RepeatMasker: rmsk.sh
+
+## Additional analysis: compare to model-based CGIs
+compare_model-based_CGIs.sh
+&emsp;&emsp;Downloads model-based oCGIs, lifts to Roller genomes, performs overlap, collects information on N bases
+&emsp;&emsp;Calls restrict_to_common_chromosomes.py to restrict analysis to CGIs that are on chromosomes used in all CGI sets
+&emsp;&emsp;Calls model-based_CGIs_makeTablesForR.py to make summary tables
