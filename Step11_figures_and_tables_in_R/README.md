@@ -43,20 +43,20 @@ Fig4_HGEs.R
 &emsp;&emsp;Generates Figure 4B; Figure S34-35; Table S6
 
 ## Copy number qPCR for hs754 humanized mouse line validation:
-Fig5_validation  
+Fig4_validation  
 &emsp;&emsp;Generates Figure S37D
 
 ## ChIP-seq in the hs754 humanized mouse line:
-Fig5_hs754_ChIP-seq.R  
+Fig4_hs754_ChIP-seq.R  
 &emsp;&emsp;Generates differential peak calls in Figure 4C, Figure S38, and Figure S41
 &emsp;&emsp;Generates Figure S39; Table S9
 
 ## RNA-seq in the hs754 humanized mouse line:
-Fig5_hs754_RNA-seq.R  
+Fig4_hs754_RNA-seq.R  
 &emsp;&emsp;Generates Figure S40; Table S10
 
 ## Association of species-specific oCGIs in species-specific peaks and gene expression changes:
-Fig6_Roller_RNA.R  
+Fig5_Roller_RNA.R  
 &emsp;&emsp;Generates Figure 5; Figure S42-45
 
 ## Analysis of predictive power of histone modifications for enhancer activity
@@ -85,6 +85,6 @@ FigSupp_phastBias.R
 Fig2-3_exampleSites.sh  
 &emsp;&emsp;Info on example loci used in Figure 2A and Figure 3B
 
-Fig7_exampleSites_CTCF.sh  
-&emsp;&emsp;Info on example loci used in Figure 7A
+Fig6_exampleSites_CTCF.sh  
+&emsp;&emsp;Info on example loci used in Figure 6A
 
