@@ -2,6 +2,8 @@
 # Run DESeq2 on RNA-seq data from developing diencephalon
 # 4 replicates per genotype (WT and HUM) at both e11.5 and e17.5
 
+# THIS WAS FORMERLY FIGURE 5 - NOW REVISED FIGURE 4
+
 #if (!require("BiocManager", quietly = TRUE))
 #  install.packages("BiocManager")
 #BiocManager::install("DESeq2")
