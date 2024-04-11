@@ -6,4 +6,4 @@ orthologous_oCGIs.sh
 
 ## Assess prevalence of oCGI gain vs loss
 gain_vs_loss.sh  
-&emsp;&emsp;Calls summarizeCGIsAcrossEntireTree.py  
+&emsp;&emsp;Calls ak20240302_summarizeCGIsAcrossEntireTree.py  
