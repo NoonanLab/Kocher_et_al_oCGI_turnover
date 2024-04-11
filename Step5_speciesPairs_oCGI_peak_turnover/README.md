@@ -41,4 +41,10 @@ qValues_peak-centric.R
 ## Test minimal difference requirement for CpG Obs/Exp ratio (Figure S30) in sub-directory Minimal_diff_req/
 minimalDifferenceRequirement.sh  
 &emsp;&emsp;Re-runs the oCGI-centric pipeline with some modifications for assessing changes  
-&emsp;&emsp;Also contains code for generating revised Fig S17 (showing Obs/Exp CpG ratio across species)
+&emsp;&emsp;Calls ak20240307_prepFiles_speciesPairs_CGIcentric_Roller_addGCcounts.py
+&emsp;&emsp;Calls ak20240307_speciesPairs_permutation_HPC_oCGI-centric_differenceRequirement.R to run permutation test
+&emsp;&emsp;Uses ak20240307_qValues_oCGI-centric.R to convert p-values to q-values
+
+&emsp;&emsp;Also contains code for generating revised Fig S17 (showing Obs/Exp CpG ratio across species)  
+&emsp;&emsp;Calls ak20240307_prepFiles_speciesPairs_CGIcentric_Roller_noPromFilter_OriginalGCcounts.py  
+
