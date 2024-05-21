@@ -215,6 +215,7 @@ H3K4me3 <- function_RNAplots(summaryTable, 'H3K4me3', 2)
 
 # scales = 'free' only for H3K4me3
 allTissues <- H3K27ac + H3K4me1 + H3K4me3 + plot_layout(nrow = 3)
+# now Fig S43-45
 ggsave('FigS6.2_RNA_allDatasets.pdf', allTissues, height = 6000, width = 2200, units = 'px')
 
 
@@ -285,10 +286,11 @@ supplement_distribution <- x %>%
   theme_bw() +
   theme(legend.position = 'none')
 
+# now Fig S42
 ggsave('FigS35_TPM_distribution.pdf', supplement_distribution, height = 1000, width = 1500, units = 'px')
   
 
-# DISTRIBUTION OF RESAMPLING MEDIANS (Fig S35D)
+# DISTRIBUTION OF RESAMPLING MEDIANS in Fig 42D (originally S35D)
 
 resamplingMedians_A <- read.table('~/Desktop/CGI/RNA/rn7_susScr11_brain_H3K27ac_A_resamplingMedians.txt', header = F) %>% tibble()
 resamplingMedians_B <- read.table('~/Desktop/CGI/RNA/rn7_susScr11_brain_H3K27ac_B_resamplingMedians.txt', header = F) %>% tibble()
