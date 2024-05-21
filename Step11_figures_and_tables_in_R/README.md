@@ -1,9 +1,5 @@
 # Step 11: generate figures and tables in R
 
-## Comparison of CGI maps
-FigSupp_Model-based_CGIs.R  
-&emsp;&emsp;Generates Figure S2  
-
 ## Overlap of oCGIs and peaks in single species:
 
 Fig1_CGIcentric.R  
@@ -11,6 +7,10 @@ Fig1_CGIcentric.R
 
 Fig1_peakCentric.R  
 &emsp;&emsp;Generates Figure 1C-E; Figures S7-12  
+
+## Comparison of CGI maps
+FigSupp_Model-based_CGIs.R  
+&emsp;&emsp;Generates Figure S2  
 
 ## Analysis of predictive power of histone modifications for enhancer activity
 FigSupp_LacZ_activity.R  
