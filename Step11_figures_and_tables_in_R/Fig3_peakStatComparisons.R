@@ -263,6 +263,7 @@ H3K4me3_phastCons <- function_phastCons(table, 'H3K4me3', 'tan1')
 H3K27ac_phastCons <- function_phastCons(table, 'H3K27ac', 'darkseagreen3')
 H3K4me1_phastCons <- function_phastCons(table, 'H3K4me1', 'mediumpurple2')
 
+# now Fig S31
 phastCons <- H3K4me3_phastCons + H3K27ac_phastCons + H3K4me1_phastCons + plot_layout(nrow = 3)
 ggsave('FigS24_phastCons_manyPairs.pdf', phastCons, height = 3000, width = 1800, units = 'px')
 
@@ -376,6 +377,7 @@ H3K4me3_age <- function_age(table, 'H3K4me3')
 H3K27ac_age <- function_age(table, 'H3K27ac')
 H3K4me1_age <- function_age(table, 'H3K4me1')
 
+# now Fig S32
 age <- H3K4me3_age + H3K27ac_age + H3K4me1_age + plot_layout(nrow = 3)
 ggsave('FigS25_age_manyPairs.pdf', age, height = 3000, width = 2000, units = 'px')
 
