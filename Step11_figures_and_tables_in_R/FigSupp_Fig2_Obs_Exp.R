@@ -1,6 +1,7 @@
 # 3/7/2024
-# Purpose: generate plots matching Fig S12 but for Obs/Exp CpG ratios
+# Purpose: generate plots matching Fig S15 (originally S12) but for Obs/Exp CpG ratios
 # instead of CpG number
+# THIS MAKES FIG S17
 
 # model this code after code in Fig2_speciesComparisons.R
 
