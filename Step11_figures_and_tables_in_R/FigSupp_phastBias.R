@@ -1,5 +1,7 @@
 # 2/13/23
 
+# MAKES FIG S47 (originally S40)
+
 require(ggplot2)
 require(tidyverse)
 require(patchwork)
