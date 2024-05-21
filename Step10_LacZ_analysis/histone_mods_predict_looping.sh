@@ -4,6 +4,8 @@
 #              2) overlapping an oCGI
 # Count promoter interactions
 
+# THIS WILL BE REVISED FIG S4
+
 # work here:
 cd /gpfs/gibbs/pi/noonan/ak2267/Revisions/Looping
 
