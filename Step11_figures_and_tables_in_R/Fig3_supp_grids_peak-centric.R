@@ -37,7 +37,7 @@ gridLineColor <- 'gray80'
 
 
 ##############################
-#### make plots for supplement
+#### make plots for supplement - now Fig S29
 
 gridTable$log2FD <- log2(gridTable$FD)
 
@@ -91,6 +91,7 @@ pair1 <- (pair1_brain_H3K4me3 + pair1_brain_H3K27ac + pair1_brain_H3K4me1) /
   (pair1_muscle_H3K4me3 + pair1_muscle_H3K27ac + pair1_muscle_H3K4me1) /
   (pair1_testis_H3K4me3 + pair1_testis_H3K27ac + pair1_testis_H3K4me1) + plot_layout(nrow = 4)
 
+# now Fig S29
 ggsave('FigS26_peakCentricSupp_rhesusMouse.pdf', pair1, width = 1150, height = 1550, units = 'px')
 
 
@@ -116,6 +117,7 @@ pair2 <- (pair2_brain_H3K4me3 + pair2_brain_H3K27ac + pair2_brain_H3K4me1) /
   (pair2_muscle_H3K4me3 + pair2_muscle_H3K27ac + pair2_muscle_H3K4me1) /
   (pair2_testis_H3K4me3 + pair2_testis_H3K27ac + pair2_testis_H3K4me1) + plot_layout(nrow = 4)
 
+# now Fig S29
 ggsave('FigS26_peakCentricSupp_ratDog.pdf', pair2, width = 1150, height = 1550, units = 'px')
 
 # Marmoset vs Cat
@@ -140,6 +142,7 @@ pair3 <- (pair3_brain_H3K4me3 + pair3_brain_H3K27ac + pair3_brain_H3K4me1) /
   (pair3_muscle_H3K4me3 + pair3_muscle_H3K27ac + pair3_muscle_H3K4me1) /
   (pair3_testis_H3K4me3 + pair3_testis_H3K27ac + pair3_testis_H3K4me1) + plot_layout(nrow = 4)
 
+# now Fig S29
 ggsave('FigS26_peakCentricSupp_marmosetCat.pdf', pair3, width = 1150, height = 1550, units = 'px')
 
 # Pig vs Horse
@@ -164,6 +167,7 @@ pair4 <- (pair4_brain_H3K4me3 + pair4_brain_H3K27ac + pair4_brain_H3K4me1) /
   (pair4_muscle_H3K4me3 + pair4_muscle_H3K27ac + pair4_muscle_H3K4me1) /
   (pair4_testis_H3K4me3 + pair4_testis_H3K27ac + pair4_testis_H3K4me1) + plot_layout(nrow = 4)
 
+# now Fig S29
 ggsave('FigS26_peakCentricSupp_pigHorse.pdf', pair4, width = 1150, height = 1550, units = 'px')
 
 #############################
