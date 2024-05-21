@@ -210,4 +210,4 @@ done
 # Copy results into Excel and then export as text file for use in R
 # Excel file: oCGI_cCRE_overlap.xlsx
 # Text file: oCGI_cCRE_overlap.txt
-# R script with plots: oCGI_cCRE_overlap.R
+# R script with plots: FigSupp_oCGI_cCRE_overlap.R
