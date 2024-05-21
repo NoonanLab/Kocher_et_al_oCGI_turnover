@@ -21,8 +21,8 @@ Fig2_speciesComparisons.R
 Fig3_rhesusMouse_example.R  
 &emsp;&emsp;Generates example grid and histogram in Figure S22  
 
-Fig3-4-7_grids.R  
-&emsp;&emsp;Generates Figure 3C-D, 4A, 7B-C; Figure S23-28, S33, S46; Table S3  
+Fig3-4-6_grids.R  
+&emsp;&emsp;Generates Figure 3C-D, 4A, 6B-C; Figure S23-28, S33, S46; Table S3  
 
 Fig3_peakStatComparisons.R  
 &emsp;&emsp;Generates Figure 3E; Figures S31-32 
