@@ -16,6 +16,10 @@ Fig2_orthologous_oCGIs.R
 Fig2_speciesComparisons.R  
 &emsp;&emsp;Generates Figure 2C-E; Figure S15-16, S18-20  
 
+## Compare Obs/Exp CpGs
+FigSupp_Fig2_Obs_Exp.R  
+&emsp;&emsp;Generates Figure S17  
+
 ## Overlap of species-specific oCGIs with species-specific peaks:
 
 Fig3_rhesusMouse_example.R  
@@ -72,10 +76,6 @@ FigSupp_oCGI_cCRE_overlap.R
 ## Comparison of CGI maps
 FigSupp_Model-based_CGIs.R  
 &emsp;&emsp;Generates Figure S2  
-
-## Compare Obs/Exp CpGs
-FigSupp_Fig2_Obs_Exp.R  
-&emsp;&emsp;Generates Figure S17
 
 ## Polarize oCGI gain and loss
 FigSupp_gain_vs_loss.R  
