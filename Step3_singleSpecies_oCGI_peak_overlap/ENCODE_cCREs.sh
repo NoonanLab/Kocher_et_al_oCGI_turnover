@@ -1,7 +1,7 @@
 # 2/27/2024
 # Purpose: determine overlap of oCGIs with ENCODE cCRE categories
 # and generate bar plots showing this
-# This is revised manuscript Fig SX
+# This is revised manuscript Fig S6
 
 # Make directory
 mkdir /gpfs/gibbs/pi/noonan/ak2267/Revisions
