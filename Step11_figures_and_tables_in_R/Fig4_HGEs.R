@@ -78,6 +78,7 @@ brain_ac <- function_HGE_heatmap(table.int, 'brain_ac', 'palegreen4', -2.1, 1.1)
 brain_me2 <- function_HGE_heatmap(table.int, 'brain_me2', 'darkgoldenrod1', -2.1, 1.1)
 limb_ac <- function_HGE_heatmap(table.int, 'limb_ac', 'palegreen4', -2.1, 1.1)
 
+# now Fig S35
 HGE <- brain_ac + brain_me2 + limb_ac + plot_layout(nrow = 3)
 ggsave('FigS29_fullHGE.pdf', HGE, height = 2200, width = 1700, units = 'px')
 
@@ -211,7 +212,7 @@ Fig4B <- Fig4B_H / Fig4B_RM / Fig4B_HR
 ggsave('Fig4B_HGE_enrichment.pdf', Fig4B, height = 1400, width = 600, units = 'px')
 
 
-##### generate distributions for the supplemental figure (Figure S28 panel D)
+##### generate distributions for the supplemental figure (Fig S34 (originally S28) panel D)
 # download files from /home/ak2267/project/EnhancerClasses/HGE/permutation:
 # brain_ac_CS23_observed_HGEs_CGI_patterns.txt
 # brain_ac_CS23_resampled_HGEs_CGI_patterns.txt
