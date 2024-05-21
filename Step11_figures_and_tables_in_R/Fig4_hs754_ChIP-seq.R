@@ -2,7 +2,7 @@
 # Purpose: analyze ChIP-seq data from hs754 humanized mouse 
 # using DESeq2 to identify differential peaks between WT and HUM
 
-# THIS WAS FOREMERLY FIGURE 5 - NOW IN REVISED FIGURE 4
+# THIS WAS ORIGINALLY FIGURE 5 - NOW IN REVISED FIGURE 4
 
 require(DESeq2)
 require(tidyverse)
@@ -88,7 +88,7 @@ fullTable$mark <- factor(fullTable$mark, levels = c('H3K4me3', 'H3K27ac', 'H3K27
 # view peaks in hs754
 View(fullTable[fullTable$chr=='chr13'&fullTable$start>72436073&fullTable$start<72441214,])
 
-# make plots for Fig S32
+# make plots for Fig S39 (originally S32)
 ChIPplots <- fullTable %>%
   filter(mark %in% c('H3K4me3', 'H3K27ac')) %>%
   ggplot(aes(x = log2(baseMean), 
@@ -111,6 +111,7 @@ ChIPplots <- fullTable %>%
   labs(x = 'Log2 (baseMean)',
        y = 'Log2 (HUM / WT)')
 
+# now S39
 setwd('/Users/acadiak/Desktop/CGI/Figures/Jan_2023')
 ggsave('FigS32_hs754_ChIP.pdf', ChIPplots, height = 2400, width = 3300, units = 'px')
 
@@ -156,7 +157,7 @@ write_delim(fullTableForExport %>% arrange(Significant, TimePoint, HistoneModifi
             col_names = T)
 
 
-# export subset of table as bed files for the chr19 CNV region (for Fig S43)
+# export subset of table as bed files for the chr19 CNV region for Fig S51 (originally S43)
 # viewing region: chr19:36,748,165-37,454,636
 
 View(fullTable[fullTable$chr=='chr13'&fullTable$start>72436073&fullTable$start<72441214,])
@@ -199,7 +200,7 @@ for (tp in c('e11.5', 'e17.5')) {
   }
 }
 
-# use in browser to generate Figure S5.3
+# use in browser to generate Figure S51 (originally S43)
 # before each bed file paste this line:
 # track type=bed name=e11.5_H3K4me3 itemRgb=On
 # track type=bed name=e11.5_H3K27ac itemRgb=On
