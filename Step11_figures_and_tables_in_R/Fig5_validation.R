@@ -1,7 +1,7 @@
 # 2/3/23
 # Copy number qPCR to verify the mouse line
 
-# THIS WAS FORMERLY FIGURE 5 - NOW REVISED FIGURE 4
+# THIS WAS FORMERLY ASSOCIATED WITH FIGURE 5 - NOW REVISED FIGURE 4
 
 require(tidyverse)
 require(ggplot2)
@@ -23,7 +23,7 @@ norm_qPCR <- left_join(qPCR %>% filter(Primers != 'control'),
                        by = c('Geno', 'Individual'),
                        suffix = c('.region', '.control'))
 
-# add dCt, FC, and propgate SD
+# add dCt, FC, and propagate SD
 norm_qPCR$dCt <- norm_qPCR$Ct.region - norm_qPCR$Ct.control
 norm_qPCR$FD <- 2 ^ ( - norm_qPCR$dCt)
 norm_qPCR$SD.FD <- sqrt((norm_qPCR$SD.region^2) + (norm_qPCR$SD.control^2))
@@ -75,4 +75,5 @@ copyNumber <- norm_qPCR %>%
   geom_hline(yintercept = 1, color = 'gray30', lty = 2) +
   labs(x = '', y = 'Fold Change vs Control Region\n(2 ^ -ddCt, Normalized to WT 1)')
 
+# now Fig S37D
 ggsave('FigS30D_copyNumber_qPCR.pdf', copyNumber, height = 700, width = 2200, units = 'px')
