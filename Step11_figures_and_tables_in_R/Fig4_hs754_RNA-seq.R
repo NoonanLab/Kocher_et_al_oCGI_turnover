@@ -2,7 +2,7 @@
 # Run DESeq2 on RNA-seq data from developing diencephalon
 # 4 replicates per genotype (WT and HUM) at both e11.5 and e17.5
 
-# THIS WAS FORMERLY FIGURE 5 - NOW REVISED FIGURE 4
+# THIS WAS FORMERLY ASSOCIATED WITH FIGURE 5 - NOW REVISED FIGURE 4
 
 #if (!require("BiocManager", quietly = TRUE))
 #  install.packages("BiocManager")
@@ -154,7 +154,7 @@ e17.5 <- res17 %>%
   coord_cartesian(ylim = c(-5, 5))
 # left blue dot is Irx1, right blue dot is Irx2
 
-# print plots
+# print plots - Figure S40 (originally S33)
 setwd('/Users/acadiak/Desktop/CGI/Figures/Jan_2023')
 RNA_plots <- e11.5 + e17.5
 ggsave('FigS5.4_RNA_volcanoPlots.pdf', RNA_plots, height = 1200, width = 2400, units = 'px')
