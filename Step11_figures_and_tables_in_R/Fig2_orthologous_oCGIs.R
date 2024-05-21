@@ -1,7 +1,7 @@
 # 10/9/22
 # Purpose:
 # 1) generate bar plot with oCGI percentages for a subset of species pairs (Fig 2B)
-# 2) generate bar plot with oCGI percentages for all species pairs (Fig S11)
+# 2) generate bar plot with oCGI percentages for all species pairs (Fig S14, originally S11)
 # 3) generate Table S2 (numbers and percentages for all species pairs)
 
 # updated 1/9/23 to use full tables to get counts
@@ -169,9 +169,9 @@ counts %>%
 # rn7_equCab3      rn7      equCab3  B           14177 0.560 
 # rn7_equCab3      rn7      equCab3  both         1889 0.0746
 
-###########
-# Fig S11 #
-###########
+############################
+# Fig S14 (originally S11) #
+############################
 
 ############################################################
 #### Generate supplementary bar plots with all species pairs
