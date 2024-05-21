@@ -6,7 +6,7 @@
 cd /gpfs/gibbs/pi/noonan/ak2267/speciesPairs/consensusCGIs/rheMac10_mm39
 
 #########
-# FIG 7 #
+# FIG 6 #
 #########
 
 # peaks are here
