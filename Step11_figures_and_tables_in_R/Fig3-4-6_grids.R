@@ -237,12 +237,15 @@ H3K4me1_liver <- function_allSpecies_BvsA(Roller_gridTable, 'liver', 'H3K4me1', 
 H3K4me1_muscle <- function_allSpecies_BvsA(Roller_gridTable, 'muscle', 'H3K4me1', 'None', 'mediumpurple4', -1, 1)
 H3K4me1_testis <- function_allSpecies_BvsA(Roller_gridTable, 'testis', 'H3K4me1', 'None', 'mediumpurple4', -1, 1) # ~12 down, 4 up
 
+# now Fig S23-24
 H3K4me3 <- H3K4me3_brain + H3K4me3_muscle + H3K4me3_liver + H3K4me3_testis + plot_layout(ncol = 2)
 ggsave('FigS18-19_H3K4me3_allCombos.pdf', H3K4me3, height = 3500, width = 3300, units = 'px')
 
+# now Fig S25-26
 H3K27ac <- H3K27ac_brain + H3K27ac_muscle + H3K27ac_liver + H3K27ac_testis + plot_layout(ncol = 2)
 ggsave('FigS20-21_H3K27ac_allCombos.pdf', H3K27ac, height = 3500, width = 3300, units = 'px')
 
+# now Fig S27-28
 H3K4me1 <- H3K4me1_brain + H3K4me1_muscle + H3K4me1_liver + H3K4me1_testis + plot_layout(ncol = 2)
 ggsave('FigS22-23_H3K4me1_allCombos.pdf', H3K4me1, height = 3500, width = 3300, units = 'px')
 
@@ -278,6 +281,7 @@ devBrain_H3K27ac <- H3K27ac_devBrain_0 + H3K27ac_devBrain_1 + H3K27ac_devBrain_2
 devBrain_H3K4me2 <- H3K4me2_devBrain_0 + H3K4me2_devBrain_1 + H3K4me2_devBrain_2 + H3K4me2_devBrain_3 + plot_layout(ncol = 4)
 devLimb_H3K27ac <- H3K27ac_devLimb_0 + H3K27ac_devLimb_1 + H3K27ac_devLimb_2 + H3K27ac_devLimb_3 + plot_layout(ncol = 4)
 
+# now Fig S33
 ggsave('FigS27_Noonan_devBrain_H3K27ac.pdf', devBrain_H3K27ac, height = 900, width = 2700, units = 'px')
 ggsave('FigS27_Noonan_devBrain_H3K4me2.pdf', devBrain_H3K4me2, height = 900, width = 2700, units = 'px')
 ggsave('FigS27_Noonan_devLimb_H3K27ac.pdf', devLimb_H3K27ac, height = 900, width = 2700, units = 'px')
@@ -348,6 +352,7 @@ HNF6 <- function_allSpecies_BvsA_TF(LiverTF_gridTable, 'liver', 'HNF6', 'None', 
                                     floor(min(LiverTF_gridTable %>% filter(mark == 'HNF6') %>% select(log2FD)) / 0.5) * 0.5,
                                     ceiling(max(LiverTF_gridTable %>% filter(mark == 'HNF6') %>% select(log2FD)) / 0.5) * 0.5)
 
+# now Fig S46
 AllTFs <- CTCF + HNF6 + HNF4A + FOXA1 + CEBPA + plot_layout(nrow = 5)
 ggsave('FigS39_allTFs.pdf', AllTFs, height = 4800, width = 800, units = 'px')
 
