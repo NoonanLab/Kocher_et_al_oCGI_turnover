@@ -85,7 +85,7 @@ table$CGI_summary <- factor(table$CGI_summary,
                            levels = c('A-only','B-only','Shared'))
 
 
-#### Generate main figure (Fig 2C-E) and supplementary figure (Fig S2.3) using only data from Rhesus-Mouse species pair
+#### Generate main figure (Fig 2C-E) and supplementary figure (Fig S19) using only data from Rhesus-Mouse species pair
 
 # get median and upper quartile for max LOD score for text
 table$log2MaxLOD <- log2(1 + table$MaxPhastConsScore_CGI)
@@ -143,7 +143,7 @@ quantiles_90 <- function(x) {
   r
 }
 
-## factor species pairs in order to match bar plots in Fig S2.2
+## factor species pairs in order to match bar plots
 speciesPairSubsetA <- c('rheMac10_mm39', 'calJac4_rn7', 'rheMac10_rn7', 'calJac4_mm39', 'rheMac10_calJac4', 'mm39_rn7',
                         'susScr11_felCat9', 'canFam6_equCab3', 'susScr11_canFam6', 'canFam6_felCat9', 'felCat9_equCab3', 'susScr11_equCab3')
 speciesPairSubsetB <- c('rheMac10_susScr11', 'calJac4_canFam6', 'mm39_felCat9', 'rn7_equCab3', 'rheMac10_canFam6', 'calJac4_felCat9', 'mm39_equCab3', 'rn7_susScr11',
@@ -173,7 +173,7 @@ table$speciesPair <- factor(table$speciesPair, levels = speciesPairList)
 #############################################
 
 ##### Generate plots with CpG number for full set of species pairs 
-##### for supplementary figure (Fig S12)
+##### for supplementary Fig S15 (originally S12)
 
 # do wilcoxon test
 wilcox.CpGnum.A <- table %>%
@@ -286,7 +286,7 @@ summary(table %>%
 
 
 ##### Generate plots with LENGTH for full set of species pairs 
-##### for supplementary figure (Fig S13)
+##### for supplementary Fig S16 (originally S13)
 
 # do wilcoxon test
 wilcox.length.A <- table %>%
@@ -384,7 +384,7 @@ ggsave('FigS13_allSpecies_length.pdf', allSpecies_length, height = 1200, width =
 
 
 ##### Generate plots with phastCons max LOD score for full set of species pairs
-##### for supplementary figure (Fig S14)
+##### for supplementary Fig S18 (originally S14)
 
 # do wilcoxon test
 wilcox.phastCons.maxLOD.A.vs.Shared <- table %>%
@@ -456,7 +456,7 @@ summary(table %>% filter(speciesPair == 'Rhesus\nMouse', CGI_summary == 'B-only'
 summary(table %>% filter(speciesPair == 'Rhesus\nMouse', CGI_summary == 'Shared') %>% select(MaxPhastConsScore_CGI)) # 341.0
 
 ##### Generate plots with CGI age for full set of species pairs
-##### for supplementary figure (Fig S16)
+##### for supplementary Fig S19 (originally S16)
 
 # count categories for ADULT tissues (Roller)
 ageCounts <- table %>%
@@ -624,11 +624,11 @@ rhesusMouse.age <- table %>%
 ggsave('Fig2E_rhesusMouse_age.pdf', rhesusMouse.age, height = 1300, width = 1400, units = 'px')
 
 
-###########
-# Fig S15 #
-###########
+############################
+# Fig S19 (originally S15) #
+############################
 
-# DO WILCOXON TESTS for all supplement S15 plots
+# DO WILCOXON TESTS for all supplement S19 (originally S15) plots
   
 # SUM of phastCons LOD SCORES
 wilcox.rhesusMouse.sumLOD.A <- table %>%
