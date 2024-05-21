@@ -189,7 +189,7 @@ CGI_C <- function_barplots(shuffling %>% filter(centric == 'CGI', species != 'Rh
 CGI_D <- function_barplots(shuffling %>% filter(centric == 'CGI', species != 'Rhesus'), 'H3K4me2', cp.marks[4], 0.50)
 CGI_E <- function_barplots(shuffling %>% filter(centric == 'CGI', species != 'Rhesus'), 'Any', cp.marks[5], 0.80)
 
-# generate Fig S5
+# generate Fig S5 (originally S3)
 CGI_centric <- CGI_A + CGI_B + CGI_C + CGI_D + CGI_E + plot_layout(ncol = 5, widths = c(4, 6, 4, 1, 1))
 ggsave('FigS3_allSpecies_CGIcentric.pdf', CGI_centric, height = 2700, width = 2750, units = 'px')
 
