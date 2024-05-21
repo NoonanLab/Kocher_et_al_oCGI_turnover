@@ -2,6 +2,8 @@
 # Purpose: analyze LacZ data from VISTA to see how predictive each mark is of activity (with and without CGIs)
 # This version is updated to include comparisons to non-active VISTA elements
 
+# MAKES FIG S3 (originally S2)
+
 library(cowplot)
 theme_set(theme_cowplot())
 library(ggplot2)
@@ -176,7 +178,7 @@ yesCGIs <- percentTable_long %>%
               filter(CGI == '+'),
             aes(x = stars.x , y = y + 0.03, label = stars), color = 'dodgerblue4', inherit.aes = F, size = 6)
 
-
+# now Fig S3
 LacZ <- noCGIs + yesCGIs + plot_layout(ncol = 2)
 ggsave('FigS2_LacZ.pdf', LacZ, height = 1800, width = 2800, units = 'px')
 
