@@ -186,7 +186,7 @@ peakCentric %>%
 
 
 #####################################
-### RPKM - Fig S8 - originally S5 ###
+### RPKM - Fig S8 (originally S5) ###
 #####################################
 
 # perform Wilcoxon test across every pair in the dataset
@@ -412,7 +412,7 @@ ggsave('FigS5_partB2_RPKM_.pdf', RPKM.dev.2, height = 650, width = 600, units = 
 
 
 ################################################
-###### PEAK LENGTH Fig S9 - originally S6 ######
+###### PEAK LENGTH Fig S9 (originally S6) ######
 ################################################
 
 # length of peaks with oCGIs vs peaks without oCGIs
@@ -622,7 +622,7 @@ ggsave('FigS6_partB2_peakLength_.pdf', length.dev.2, height = 650, width = 600, 
 
 
 ###########################################
-### phastCons - Fig S10 - originally S7 ###
+### phastCons - Fig S10 (originally S7) ###
 ###########################################
 
 # perform Wilcoxon test across every pair in the dataset
@@ -861,7 +861,7 @@ ggsave('FigS7_partB2_phastCons_.pdf', phastCons.dev.2, height = 650, width = 600
 
 
 #############################################
-### sequence age - Fig 12 - originally S9 ###
+### sequence age - Fig 12 (originally S9) ###
 #############################################
 
 # For non-ape species: convert all ape/human age sequences to None
