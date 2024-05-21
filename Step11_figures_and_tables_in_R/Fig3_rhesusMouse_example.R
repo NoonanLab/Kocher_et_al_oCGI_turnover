@@ -1,5 +1,5 @@
 # 10/24/22
-# Purpose: generate histogram for example permutation test in Fig S17
+# Purpose: generate histogram for example permutation test in Fig S22 (originally S17)
 
 require(ggplot2)
 require(cowplot)
@@ -80,7 +80,7 @@ expectedValues <- as.vector(expectedTable)
 # RUN PERMUTATION TEST #
 #########################
 
-# for making histogram in Fig S3.1 (explanation of permutation test)
+# for making histogram in Fig S22 (explanation of permutation test)
 
 # prepare table to collect numbers in each CGI_Peak category
 P <- 20000
@@ -104,7 +104,7 @@ for (i in 1:P) {
   }
 }
 
-# view results for values in tables in Fig S3.1
+# view results for values in tables in Fig S22
 observedTable
 round(expectedTable, 0)
 round(log2(observedTable / expectedTable), 2)
@@ -122,7 +122,7 @@ round(log2(observedTable / expectedTable), 2)
 # -2.38  1.03 -0.40
 # -0.76 -1.73  1.57
 
-# plot histogram for Fig S3.1
+# plot histogram for Fig S22
 countTable.df <- data.frame(countTable)
 
 pdf(file = 'FigS17_exampleHistogram.pdf', height = 3, width = 4)
