@@ -1,5 +1,9 @@
 # Step 11: generate figures and tables in R
 
+## Comparison of CGI maps
+FigSupp_Model-based_CGIs.R  
+&emsp;&emsp;Generates Figure S2  
+
 ## Overlap of oCGIs and peaks in single species:
 
 Fig1_CGIcentric.R  
@@ -7,6 +11,16 @@ Fig1_CGIcentric.R
 
 Fig1_peakCentric.R  
 &emsp;&emsp;Generates Figure 1C-E; Figures S7-12  
+
+## Analysis of predictive power of histone modifications for enhancer activity
+FigSupp_LacZ_activity.R  
+&emsp;&emsp;Generates Figure S3; Table S1  
+FigSupp_histone_mods_predict_looping.R  
+&emsp;&emsp;Generates Figure S4  
+
+## cCRE definitions of oCGIs
+FigSupp_oCGI_cCRE_overlap.R  
+&emsp;&emsp;Generates Figure S6  
 
 ## Orthologous oCGIs across species pairs:
 
@@ -19,6 +33,10 @@ Fig2_speciesComparisons.R
 ## Compare Obs/Exp CpGs
 FigSupp_Fig2_Obs_Exp.R  
 &emsp;&emsp;Generates Figure S17  
+
+## Polarize oCGI gain and loss
+FigSupp_gain_vs_loss.R  
+&emsp;&emsp;Generates Figure S21  
 
 ## Overlap of species-specific oCGIs with species-specific peaks:
 
@@ -63,27 +81,9 @@ Fig4_hs754_RNA-seq.R
 Fig5_Roller_RNA.R  
 &emsp;&emsp;Generates Figure 5; Figure S42-45
 
-## Analysis of predictive power of histone modifications for enhancer activity
-FigSupp_LacZ_activity.R  
-&emsp;&emsp;Generates Figure S3; Table S1  
-FigSupp_histone_mods_predict_looping.R  
-&emsp;&emsp;Generates Figure S4  
-
-## cCRE definitions of oCGIs
-FigSupp_oCGI_cCRE_overlap.R  
-&emsp;&emsp;Generates Figure S6
-
-## Comparison of CGI maps
-FigSupp_Model-based_CGIs.R  
-&emsp;&emsp;Generates Figure S2  
-
-## Polarize oCGI gain and loss
-FigSupp_gain_vs_loss.R  
-&emsp;&emsp;Generates Figure S21
-
 ## oCGIs in phastBias tracts
 FigSupp_phastBias.R  
-&emsp;&emsp;Generates Figure S47
+&emsp;&emsp;Generates Figure S47  
 
 ## Files with coordinates and details of alignment for specific example sites shown in figures (in directory "exampleSites/"):
 Fig2-3_exampleSites.sh  
