@@ -10,9 +10,9 @@ theme_set(theme_cowplot())
 
 setwd('/Users/acadiak/Desktop/CGI/Figures/Mar_2023')
 
-###############################################################################
-## WORK WITH PEAK-CENTRIC SUMMARY TABLES FOR MAKING FIG 1 C/D/E and FIG S4-9 ##
-###############################################################################
+################################################################################
+## WORK WITH PEAK-CENTRIC SUMMARY TABLES FOR MAKING FIG 1 C/D/E and FIG S7-12 ##
+################################################################################
 
 filePathToData <- '/Users/acadiak/Desktop/CGI/singleSpecies/peakCentric/summaryFiles_singleSpeciesPeakCentric/'
 
@@ -104,9 +104,9 @@ quantiles_90 <- function(x) {
 }
 
 
-################################
-# Peaks with oCGIs - Figure S4 #
-################################
+################################################
+# Peaks with oCGIs - Figure S7 (originally S4) #
+################################################
 
 peakCentric <- table %>% 
   group_by(species, tissue, mark, CGI) %>%
@@ -185,9 +185,9 @@ peakCentric %>%
 # H3K4me2   11.0 (dev brain)    11.0 (dev brain)
 
 
-#####################
-### RPKM - Fig S5 ###
-#####################
+#####################################
+### RPKM - Fig S8 - originally S5 ###
+#####################################
 
 # perform Wilcoxon test across every pair in the dataset
 # (with CGI vs without CGI for all species x marks x tissues)
@@ -411,11 +411,11 @@ RPKM.dev.2 <- table %>%
 ggsave('FigS5_partB2_RPKM_.pdf', RPKM.dev.2, height = 650, width = 600, units = 'px')
 
 
-################################
-###### PEAK LENGTH Fig S6 ######
-################################
+################################################
+###### PEAK LENGTH Fig S9 - originally S6 ######
+################################################
 
-# FIG S6 - length of peaks with oCGIs vs peaks without oCGIs
+# length of peaks with oCGIs vs peaks without oCGIs
 
 # perform Wilcoxon test across every pair in the dataset
 # (with CGI vs without CGI for all species x marks x tissues)
@@ -465,7 +465,7 @@ wilcox.length$stars.x <- (wilcox.length$x + wilcox.length$xend) / 2
 # drop rows without a star to prevent line from being plotted
 wilcox.length <- wilcox.length[wilcox.length$Wilcox.adj < 0.05,]
 
-#### length supplement Fig 1.4 ####
+#### plots ####
 
 # plot adult - Roller tissues, species Rhesus / Marmoset / Mouse / Rat
 length.adult.1 <- table %>%
@@ -621,9 +621,9 @@ ggsave('FigS6_partB2_peakLength_.pdf', length.dev.2, height = 650, width = 600, 
 
 
 
-##########################
-### phastCons - Fig S7 ###
-##########################
+###########################################
+### phastCons - Fig S10 - originally S7 ###
+###########################################
 
 # perform Wilcoxon test across every pair in the dataset
 # (with CGI vs without CGI for all species x marks x tissues)
@@ -860,9 +860,9 @@ phastCons.dev.2 <- table %>%
 ggsave('FigS7_partB2_phastCons_.pdf', phastCons.dev.2, height = 650, width = 600, units = 'px')
 
 
-#############################
-### sequence age - Fig S9 ###
-#############################
+#############################################
+### sequence age - Fig 12 - originally S9 ###
+#############################################
 
 # For non-ape species: convert all ape/human age sequences to None
 # For non-primate species: convert all primate/ape/human age sequences to None
@@ -1244,9 +1244,9 @@ age.legend <- ageCounts %>%
 ggsave('FigS9_legend_peakAge.pdf', age.legend, height = 800, width = 1200, units = 'px')
 
 
-##########################################################
-#### FIG 1 C/D/E and Fig S8 - rhesus brain as example ####
-##########################################################
+###########################################################################
+#### FIG 1 C/D/E and Fig S11 (originally S8) - rhesus brain as example ####
+###########################################################################
 
 # RPKM for Fig 1C
 RPKM.signif <- data.frame(x=c(0.8, 1.8, 2.8),
