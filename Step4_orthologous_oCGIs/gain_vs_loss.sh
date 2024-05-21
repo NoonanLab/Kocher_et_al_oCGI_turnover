@@ -135,4 +135,4 @@ cd /Users/acadiak/Desktop/Yale/\!Writing/Kocher_CpG/GB_Revisions/Revised_code/St
 scp ak2267@mccleary.ycrc.yale.edu:/gpfs/gibbs/pi/noonan/ak2267/Revisions/Gain_vs_Loss/ak20240302_CGI_summary_acrossTree.txt .
 
 # go into R for further plotting
-# ak20240302_gain_vs_loss.R
+# FigSupp_gain_vs_loss.R
